@@ -1,0 +1,91 @@
+.bg-hero {
+    background-color: #D78428;
+}
+.logo-kemendikbud {
+    
+    height: 80px;
+}
+.logo-kemendikbud img{
+    /* display: block; */
+    width: 15%;
+    height: auto;
+}
+.logo-kemendikbud h3{       
+    display: inline-block;
+    color: #fff;    
+    font-size: 16px;    
+    height: 80px;        
+}
+.btn-coklat {
+    background-color: #D78428;
+}
+.bg-coklat {
+    background-color: #D78428;
+}
+
+.bg-event {
+    height: 300px;
+    background-size: cover;
+    background-image: url('/assets/images/bg-event.jpg');
+    margin-bottom: 150px;
+}
+.card {
+    border-radius: 1.25rem;
+}
+.card-link{
+    display: block;
+    width: fit-content;
+    font-size: 14px;
+    margin-top: auto;
+    margin-bottom: 0;
+    border-radius: 5px;
+    color: white;
+    padding: 4px 8px;
+    background-color: #C7A330;
+}
+.card-link:hover {
+    color: #fff;
+    background-color: #D78428;
+}
+.bg-berita{
+    border-radius: 5%;
+}
+.bg-pengumuman{    
+    background-color: #D78428;
+    border-radius: 10px;
+}
+/* carousel */
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+
