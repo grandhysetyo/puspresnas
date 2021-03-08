@@ -1,3 +1,63 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+hr {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    border: 0;
+    border-top: 2px solid #D78428;
+    width: 50px;
+  }
+.txt-nav{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+}
+.txt-title-orange{
+    color: #D78428;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;    
+}
+.txt-title-white{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;    
+}
+.txt-title-black{
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;    
+}
+.txt-link-orange{
+    color: #C7A330;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.txt-link-orange:hover {
+    color: #D78428;
+}
+.txt-link-white{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700; 
+}
+.txt-link-white:hover{
+    color: #000;    
+    text-decoration: none;
+}
+.txt-p{
+    color:rgb(65, 65, 65);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+.txt-a{
+
+}
+.badge-orange{
+    background-color: #D78428;
+}
 .bg-hero {
     background-color: #D78428;
 }
@@ -54,6 +114,26 @@
     background-color: #D78428;
     border-radius: 10px;
 }
+.footer-ul {
+    display: inline-block;
+    color: #808184;
+    list-style-type:none;
+    padding: 0;    
+}
+.footer-ul li {
+    margin: 15px;
+}
+.footer-ul li a {
+   color: #808184;
+}
+.footer-ul li ul{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -28px;
+    margin-left: 24px;
+}
+
 /* carousel */
 @media (max-width: 768px) {
     .carousel-inner .carousel-item > div {
