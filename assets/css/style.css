@@ -7,7 +7,14 @@ hr {
     border: 0;
     border-top: 2px solid #D78428;
     width: 50px;
-  }
+}
+.hr-pengumuman{
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    border: 0;
+    border-top: 1px solid #D78428;
+    width: 50px;
+}
 .txt-nav{
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
@@ -37,6 +44,14 @@ hr {
 .txt-link-orange:hover {
     color: #D78428;
 }
+.txt-link-orange2{
+    color: #D78428;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.txt-link-orange2:hover {
+    color: #C7A330;
+}
 .txt-link-white{
     color: #fff;
     font-family: 'Open Sans', sans-serif;
@@ -52,8 +67,11 @@ hr {
     font-weight: normal;
     font-size: 14px;
 }
-.txt-a{
-
+.txt-span {
+    color: rgb(92, 91, 91);
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
 }
 .badge-orange{
     background-color: #D78428;
