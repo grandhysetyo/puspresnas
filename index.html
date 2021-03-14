@@ -61,7 +61,7 @@
         </div>
     </nav>
 
-    <header class="bg-hero">
+    <header class="bg-orange">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -327,8 +327,7 @@
             </div>
         </div>
     </section>
-    <!-- Video -->
-    <section>
+    <section id="slider">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mx-auto text-center">
@@ -337,11 +336,103 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 mx-auto my-5">
+                <div class="col-md-12 mt-5">
+                    <!-- Start Slider Checked -->
+                    <input type="radio" name="slider" id="slide-1-radio" checked />
+                    <input type="radio" name="slider" id="slide-2-radio" />
+                    <input type="radio" name="slider" id="slide-3-radio" />
+                    <!-- End Slider Checked -->
+
+                    <!-- Start Slides -->
+                    <div class="slides ">
+                        <div class="slide">
+                            <div class="embed-responsive embed-responsive-16by9">                    
+                                <a href="https://www.youtube.com/channel/UCXTfDJ60DBmA932Du6B1ydg"
+                                ><iframe
+                                    class="embed-responsive-item rounded rounded-lg"
+                                    width="560"
+                                    height="315"
+                                    src="https://www.youtube.com/embed/3PMLwe_C-F0"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen
+                                ></iframe
+                                ></a>
+                            </div>                
+                        </div>
+                        <div class="slide">
+                            <div class="embed-responsive embed-responsive-16by9">                    
+                                <a href="https://www.youtube.com/channel/UCXTfDJ60DBmA932Du6B1ydg"
+                                ><iframe
+                                    class="embed-responsive-item rounded rounded-lg"
+                                    width="560"
+                                    height="315"
+                                    src="https://www.youtube.com/embed/cxAE3FxDvkA"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen
+                                ></iframe
+                                ></a>
+                            </div>                  
+                        </div>
+                        <div class="slide">
+                            <div class="embed-responsive embed-responsive-16by9">                    
+                                <a href="https://www.youtube.com/channel/UCXTfDJ60DBmA932Du6B1ydg"
+                                ><iframe
+                                    class="embed-responsive-item rounded rounded-lg"
+                                    width="560"
+                                    height="315"
+                                    src="https://www.youtube.com/embed/56bBOsOJZys"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen
+                                ></iframe
+                                ></a>
+                            </div>                  
+                        </div>            
                     
+                    </div>
+                    <!-- End Slides -->
+
+                    <!-- Start Slider Control -->
+
+                    <!-- Start Prevese Arrow -->
+                    <div class="prev-arrow arrow">
+                    <label for="slide-1-radio" id="prev-1-arrow">
+                        <i class="fa fa-arrow-left"></i>
+                        
+                    </label>
+                    <label for="slide-2-radio" id="prev-2-arrow">
+                        <i class="fa fa-arrow-left"></i>
+                        
+                    </label>
+                    <label for="slide-3-radio" id="prev-3-arrow">
+                        <i class="fa fa-arrow-left"></i>
+                        
+                    </label>
+                    </div>
+                    <!-- Start Prevese Arrow -->
+
+                    <!-- Start next Arrow -->
+                    <div class="next-arrow arrow">
+                    <label for="slide-1-radio" id="next-1-arrow">
+                        <i class="fa fa-arrow-right"></i>
+                    
+                    </label>
+                    <label for="slide-2-radio" id="next-2-arrow">
+                        <i class="fa fa-arrow-right"></i>
+                        
+                    </label>
+                    <label for="slide-3-radio" id="next-3-arrow">
+                        <i class="fa fa-arrow-right"></i>
+                        
+                    </label>
+                    </div>
+                    <!-- Start next Arrow -->
+                    <!-- End Slider Control -->
                 </div>
-            </div>
-        </div>
+            </div>           
+        </div>        
     </section>
     <!-- Galeri Foto -->
     <section>
@@ -368,6 +459,8 @@
             </div>
         </div>
     </section>
+    
+    
     <footer class="bg-light">
         <div class="container">
             <div class="row py-5">
@@ -440,7 +533,7 @@
                 </div>
             </div>
         </div>
-        <div class="bg-hero text-center text-white">
+        <div class="bg-orange text-center text-white">
             &copy; Pusat Prestasi Nasional - Kemendikbud - 2021
         </div>
     </footer>
