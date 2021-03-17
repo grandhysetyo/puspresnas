@@ -1,6 +1,7 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
+
 hr {
     margin-top: 0.5rem;
     margin-bottom: 1.5rem;
@@ -15,11 +16,47 @@ hr {
     border-top: 1px solid #D78428;
     width: 50px;
 }
-.txt-nav{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
+.nav-link{
+    font-family: 'Open Sans', sans-serif;    
     font-weight: 400;
     color: rgb(51, 51, 51);
+}
+.event-card {
+  position: relative;
+  width: 100%;
+  min-height: 250px;
+}
+.image-event {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle-event {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-event{
+  background-color: #D78428;
+  color: white;
+  font-size: 14px;  
+}
+.event-card:hover .image-event {
+  opacity: 0.3;
+}
+.event-card:hover .middle-event {
+  opacity: 1;
+}
+.text-event:hover{
+  color: #fff;
 }
 .txt-title-orange{
     color: #D78428;
@@ -51,6 +88,14 @@ hr {
 }
 .txt-link-orange2:hover {
     color: #C7A330;
+}
+.txt-link-orange3{
+  color: #D78428;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+.txt-link-orange3:hover {
+  color: #C7A330;
 }
 .txt-link-white{
     color: #fff;
@@ -95,7 +140,12 @@ hr {
     height: 80px;        
 }
 .btn-coklat {
+    color: #fff;
     background-color: #D78428;
+}
+.btn-coklat:hover{
+    background-color:#C7A330;
+    color: #fff;
 }
 .bg-coklat {
     background-color: #D78428;
