@@ -6,6 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/1e6b6f692c.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
@@ -26,7 +27,7 @@
 
 <body>    
     <header class="bg-header">
-        <nav class="navbar navbar-expand-lg bg-transparent">
+        <nav class="navbar navbar-expand-lg navbar-custom">
             <div class="container">
                 <div class="d-flex flex-grow-1">
                     <span class="w-100 d-lg-none d-block">
@@ -64,9 +65,7 @@
                         <li class="nav-item">
                             <a href="#" class="nav-link">Kontak Kami</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Daftar</a>
-                        </li>
+                        
                         <li class="nav-item">
                             <a href="#" class="nav-link masuk">Masuk</a>
                         </li>
@@ -92,13 +91,33 @@
                                             </div>
                                             <div class="col-md-5 col-12 order-md-2 order-1">
                                                 <img src="assets/images/banner1.svg" alt="slide">
-                                            </div>
+                                            </div>                                            
                                         </div>
+                                        
                                     </div>
                                 </div>
-                            </div>
-                            
+                            </div>     
+                            <div class="carousel-item">
+                                <div class="mask flex-center">
+                                    <div class="container">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-7 col-12 order-md-1 order-2">
+                                                <h3>Pusat Prestasi Nasional</h3>
+                                                <h4 class="text-warning">Melejitkan Talenta Indonesia</h4>
+                                                <p>Lorem ipsum dolor sit amet. Reprehenderit, qui blanditiis quidem
+                                                    rerum <br>
+                                                    necessitatibus praesentium voluptatum deleniti atque corrupti.</p>                                                
+                                            </div>
+                                            <div class="col-md-5 col-12 order-md-2 order-1">
+                                                <img src="assets/images/banner1.svg" alt="slide">
+                                            </div>                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>                                                   
                         </div>
+                        
                         <ol class="carousel-indicators">
                             <li data-target="#slider-header" data-slide-to="0" class="active"></li>
                             <li data-target="#slider-header" data-slide-to="1"></li>
@@ -115,7 +134,7 @@
             </div>
         </div>
     </header>
-
+    <!-- Jenjang -->
     <section class="bg-blue-grad">
         <div class="container">
             <div class="row">                
@@ -172,28 +191,53 @@
                 </div>                                
             </div>
             <div class="row">
-                <div class="slider-layanan" data-items="1,3,5,4" data-slide="2" id="slider-layanan"  data-interval="1000">
-                    <div class="slider-layanan-inner">                    
-                        <div class="item">
-                            <div class="service">                                
-                                <h3>E-Sertifikat</h3>
-                                <p>Lorem ipsum dolor sit amesit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, conseelit,</p>
-                                <img src="assets/images/e-sertifitakat-icon.svg" alt="">
+                <div id="slider-layanan" class="carousel slide w-100" data-ride="carousel">
+                    <div class="carousel-inner w-100" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="col-md-4 col-sm">
+                                <div class="card shadow-sm">
+                                    <img class="icon-layanan" src="assets/images/digitalcv-icon.svg">
+                                    <div class="card-body">                                                                                        
+                                        <h3>E-Sertifikat</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum, assumenda accusantium ullam</p>
+                                        <a href="#" class="card-link">Kunjungi</a>
+                                    </div>                                                                              
+                                </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="service">                                
-                                <h3>E-Sertifikat</h3>
-                                <p>Lorem ipsum dolor sit amesit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, conseelit,</p>
-                                <img src="assets/images/e-sertifitakat-icon.svg" alt="">
+                        <div class="carousel-item">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="card shadow-sm">
+                                    <img class="icon-layanan" src="assets/images/e-sertifitakat-icon.svg">
+                                    <div class="card-body">                                                                                        
+                                        <h3>E-Sertifikat</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum, assumenda accusantium ullam</p>
+                                        <a href="#" class="card-link">Kunjungi</a>
+                                    </div>                                                                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-4 col-sm-12 ">
+                                <div class="card shadow-sm">
+                                    <img class="icon-layanan" src="assets/images/digitalcv-icon.svg">
+                                    <div class="card-body">                                                                                        
+                                        <h3>E-Sertifikat</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum, assumenda accusantium ullam</p>
+                                        <a href="#" class="card-link">Kunjungi</a>
+                                    </div>                                                                             
+                                </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <button class="btn btn-orange leftLst"><i class="fas fa-chevron-left"></i></button>
-                    <button class="btn btn-orange rightLst"><i class="fas fa-chevron-right"></i></button>
-                    
-                    
+                    <a class="carousel-control-prev" href="#slider-layanan" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#slider-layanan" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -208,57 +252,56 @@
                 </div>                                
             </div>
             <div class="row">
-                <div class="col-md-12 bg-event">
-                    <div class="MultiCarousel" data-items="1,2,3,3" data-slide="2" id="MultiCarousel"  data-interval="1000">
-                        <div class="MultiCarousel-inner">                    
-                            <div class="item">
-                                <div class="pad15">                                
-                                    <img src="assets/images/logo-kopsi.jpg"  class="img-fluid">
-                                    <a href="#" class="badge badge-pill badge-warning text-white">Kunjungi</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="pad15">                                
-                                    <img src="assets/images/logo-ldbi.jpg"  class="img-fluid">
-                                    <a href="#" class="badge badge-pill badge-warning text-white mt-auto mb-0">Kunjungi</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="pad15">                                
-                                    <img src="assets/images/logo-fl2sn.png"  class="img-fluid">
-                                    <a href="#" class="badge badge-pill badge-warning text-white">Kunjungi</a>
-                                </div>
-                            </div> 
-                            <div class="item">
-                                <div class="pad15">                                
-                                    <img src="assets/images/logo-kopsi.jpg"  class="img-fluid">
-                                    <a href="#" class="badge badge-pill badge-warning text-white">Kunjungi</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="pad15">                                
-                                    <img src="assets/images/logo-ldbi.jpg"  class="img-fluid">
-                                    <a href="#" class="badge badge-pill badge-warning text-white mt-auto mb-0">Kunjungi</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="pad15">                                
-                                    <img src="assets/images/logo-fl2sn.png"  class="img-fluid">
-                                    <a href="#" class="badge badge-pill badge-warning text-white">Kunjungi</a>
-                                </div>
-                            </div>                                                
-                        </div>
-                        <button class="btn btn-orange leftLst text-white"><i class="fas fa-chevron-left"></i></button>
-                        <button class="btn btn-orange rightLst text-white"><i class="fas fa-chevron-right"></i></button>
-                    </div>
+                <div class="col-md-2 d-md-block d-none">
+                    <img src="assets/images/event-hero-default.svg" class="event-hero" alt="">
                 </div>
-                
-            </div>                             
+                <div class="col-md-9">
+                    <div class="bg-event">
+                        <div id="slider-event" class="carousel slide w-100" data-ride="carousel">
+                            <div class="carousel-inner w-100" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="col-md-4 col-sm">
+                                        <div class="card">
+                                            <img class="img-event" src="assets/images/logo-fl2sn.png">                                                                                                                                                                     
+                                            <a href="#" class="card-link">Kunjungi</a>                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="card">
+                                            <img class="img-event" src="assets/images/logo-ldbi.jpg">                                        
+                                            <a href="#" class="card-link">Kunjungi</a>                                                                     
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-4 col-sm-12 ">
+                                        <div class="card">
+                                            <img class="img-event" src="assets/images/logo-kopsi.jpg">                                                                                                                                                                            
+                                            <a href="#" class="card-link">Kunjungi</a>                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#slider-event" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#slider-event" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>                        
+                    </div>
+                </div>                
+            </div>    
+                                    
         </div>
-    </section>
+    
 
     <!-- Berita Terbaru -->
-    <section class="">
+    
         <div class="container">
             <div class="row">                
                 <div class="col-md-4 mx-auto mt-5">
@@ -329,8 +372,8 @@
                 <div class="col-md-6">                                        
                     <a href="" class="pengumuman-card">        
                         <div>
-                            <h1>15</h1>
-                            <h4>Maret</h4>
+                            <h2>15</h2>
+                            <h5>Maret</h5>
                             <h5>2021</h5>
                         </div>                                                                                                
                         <h4>Pengumuman Panduan Pelaksanaan Lomba LDBI NSDC</h4>                            
@@ -339,8 +382,8 @@
                 <div class="col-md-6">                                        
                     <a href="" class="pengumuman-card">        
                         <div>
-                            <h1>15</h1>
-                            <h4>Maret</h4>
+                            <h2>08</h2>
+                            <h5>Maret</h5>
                             <h5>2021</h5>
                         </div>                                                                                                
                         <h4>Pengumuman Panduan Pelaksanaan Lomba LDBI NSDC</h4>                            
@@ -349,18 +392,18 @@
                 <div class="col-md-6">                                        
                     <a href="" class="pengumuman-card">        
                         <div>
-                            <h1>15</h1>
-                            <h4>Maret</h4>
+                            <h2>10</h2>
+                            <h5>Maret</h5>
                             <h5>2021</h5>
                         </div>                                                                                                
-                        <h4>Pengumuman Panduan Pelaksanaan Lomba LDBI NSDC</h4>                            
+                        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>                            
                     </a>                    
                 </div>
                 <div class="col-md-6">                                        
                     <a href="" class="pengumuman-card">        
                         <div>
-                            <h1>15</h1>
-                            <h4>Maret</h4>
+                            <h2>30</h2>
+                            <h5>Maret</h5>
                             <h5>2021</h5>
                         </div>                                                                                                
                         <h4>Pengumuman Panduan Pelaksanaan Lomba LDBI NSDC</h4>                            
@@ -379,7 +422,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 mx-auto">
-                    <div class="bg-vote vote">
+                    <div class="vote">
+                        <img src="assets/images/bg-vote.svg" alt="">
                         <h2>Jajak Pendapat #SobatPrestasi</h2>
                         <h4>Bagaimana menurutmu informasi yang ditampilkan di website ini?</h4>
                         <form action="">
@@ -428,125 +472,22 @@
         </div>
     </section>
     <!-- Video -->
-    <section id="slider">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mx-auto">
-                    <h4 class="title-section">Video</h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 mt-5">
-                    <!-- Start Slider Checked -->
-                    <input type="radio" name="slider" id="slide-1-radio" checked />
-                    <input type="radio" name="slider" id="slide-2-radio" />
-                    <input type="radio" name="slider" id="slide-3-radio" />
-                    <!-- End Slider Checked -->
-
-                    <!-- Start Slides -->
-                    <div class="slides ">
-                        <div class="slide">
-                            <div class="embed-responsive embed-responsive-16by9">                    
-                                <a href="https://www.youtube.com/channel/UCXTfDJ60DBmA932Du6B1ydg"
-                                ><iframe
-                                    class="embed-responsive-item rounded rounded-lg"
-                                    width="560"
-                                    height="315"
-                                    src="https://www.youtube.com/embed/3PMLwe_C-F0"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen
-                                ></iframe
-                                ></a>
-                                
-                            </div> 
-                            <h3 class="text-center">Lorem ipsum dolor</h3>               
-                        </div>
-                        <div class="slide">
-                            <div class="embed-responsive embed-responsive-16by9">                    
-                                <a href="https://www.youtube.com/channel/UCXTfDJ60DBmA932Du6B1ydg"
-                                ><iframe
-                                    class="embed-responsive-item rounded rounded-lg"
-                                    width="560"
-                                    height="315"
-                                    src="https://www.youtube.com/embed/cxAE3FxDvkA"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen
-                                ></iframe
-                                ></a>
-                            </div>                  
-                        </div>
-                        <div class="slide">
-                            <div class="embed-responsive embed-responsive-16by9">                    
-                                <a href="https://www.youtube.com/channel/UCXTfDJ60DBmA932Du6B1ydg"
-                                ><iframe
-                                    class="embed-responsive-item rounded rounded-lg"
-                                    width="560"
-                                    height="315"
-                                    src="https://www.youtube.com/embed/56bBOsOJZys"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen
-                                ></iframe
-                                ></a>
-                            </div>                  
-                        </div>            
-                    
-                    </div>
-                    <!-- End Slides -->
-
-                    <!-- Start Slider Control -->
-
-                    <!-- Start Prevese Arrow -->
-                    <div class="prev-arrow arrow">
-                    <label for="slide-1-radio" id="prev-1-arrow">
-                        <i class="fa fa-arrow-left"></i>
-                        
-                    </label>
-                    <label for="slide-2-radio" id="prev-2-arrow">
-                        <i class="fa fa-arrow-left"></i>
-                        
-                    </label>
-                    <label for="slide-3-radio" id="prev-3-arrow">
-                        <i class="fa fa-arrow-left"></i>
-                        
-                    </label>
-                    </div>
-                    <!-- Start Prevese Arrow -->
-
-                    <!-- Start next Arrow -->
-                    <div class="next-arrow arrow">
-                    <label for="slide-1-radio" id="next-1-arrow">
-                        <i class="fa fa-arrow-right"></i>
-                    
-                    </label>
-                    <label for="slide-2-radio" id="next-2-arrow">
-                        <i class="fa fa-arrow-right"></i>
-                        
-                    </label>
-                    <label for="slide-3-radio" id="next-3-arrow">
-                        <i class="fa fa-arrow-right"></i>
-                        
-                    </label>
-                    </div>
-                    <!-- Start next Arrow -->
-                    <!-- End Slider Control -->
-                </div>
-            </div>           
-        </div>        
+    <section >
+          
     </section>
     <!-- Galeri -->
     <section>
         <div class="container">
-            <div class="col-md-4 mx-auto mt-5">
-                <h4 class="title-section">Galeri</h4>
-            </div> 
-            <div class="row gallery">
+            <div class="row">
+                <div class="col-md-4 mx-auto mt-5">
+                    <h4 class="title-section">Galeri</h4>
+                </div> 
+            </div>            
+            <div class="row">
                 <div class="col-md-3">
                     <div class="row">
-                        <div class="col h-50">
-                            <img src="assets/galeri/1.jpeg" class="img-square rounded rounded-lg mb-3" alt="">
+                        <div class="col">
+                            <img src="assets/galeri/1.jpeg" class="img-fluid rounded rounded-lg mb-3" alt="">
                         </div>                        
                     </div>
                     <div class="row">
@@ -555,14 +496,109 @@
                         </div>
                     </div>                    
                 </div>
-                <div class="col-md-4">
-                    <img src="assets/galeri/9.jpeg" class="img-square2 rounded rounded-lg mb-3" alt="">
+                <div class="col-md-6">
+                    <img src="assets/galeri/9.jpeg" class="img-fluid rounded rounded-lg mb-3" alt="">
+                </div>
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col">
+                            <img src="assets/galeri/1.jpeg" class="img-fluid rounded rounded-lg mb-3" alt="">
+                        </div>                        
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <img src="assets/galeri/9.jpeg" class="img-fluid rounded rounded-lg" alt="">
+                        </div>
+                    </div>                    
+                </div>  
+                <div class="col">
+                    <a class="btn-orange2 btn-radius float-right" href="#">Lebih Banyak</a>
+                </div>              
+            </div>
+        </div>
+    </section>
+    <!-- Langganan -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 p-4 mx-auto mt-5">
+                    <div class="langganan">
+                        <img src="assets/images/langganan.svg" alt="">
+                        <div class="txt-langganan">
+                            <h1>Jangan lewatkan informasi terbaru kami!</h1>                            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque natus error labore perspiciatis exercitationem aut. Nemo suscipit maxime at, illo unde voluptatibus possimus, expedita et, incidunt laudantium totam eos facere!</p>                            
+                        </div>
+                        <form action="">
+                            <div class="form-row">
+                                <div class="col">
+                                    <select class="form-control">
+                                        <option>SD</option>
+                                        <option>DIKSUS</option>
+                                        <option>SMP</option>
+                                        <option>SMA</option>
+                                        <option>DIKTI</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <input type="email" name="email" class="form-control">
+                                </div>                                
+                            </div>
+                            <button type="submit" class="btn btn-orange btn-radius float-right">Langganan</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-   
+    <section>
+        <div class="container">
+            <div class="row mt-5 pengunjung">
+                <div class="col-md-3 mx-auto">
+                    <h2>13.541</h2>
+                    <p>Pengunjung hari ini</p>
+                </div>
+                <div class="col-md-3 mx-auto">
+                    <h2>13.541</h2>
+                    <p>Pengunjung minggu ini</p>
+                </div>
+                <div class="col-md-3 mx-auto">
+                    <h2>13.541</h2>
+                    <p>Pengunjung bulan ini</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-footer">
+        <div class="container">
+            <div class="row">                
+                <div class="col-md-4">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.svg" alt="" width="100%">
+                        <h5>Pusat Prestasi Nasional</h5>
+                        <p>Sekretariat Jendral <br> Kementrian Pendidikan dan Kebudayaan</p>
+                    </div>                    
+                </div>
+                <div class="col-md-5 offset-md-3">
+                    <h3 class="text-white">Kontak Kami</h3>
+                    <div class="kontak">                        
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <p>Komplek Kementrian Pendidikan dan Kebudayaan, Gedung C, Lantai 19 Jl. Jendral Sudirman, Senayan, Jakarta - 10270</p>                                                              
+                    </div>
+                    <div class="kontak">
+                        <span><i class="fas fa-phone"></i></span>
+                        <p>021-5731177</p>  
+                    </div>
+                                      
+                    <ul class="sosmed">
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -576,114 +612,69 @@
         AOS.init();
         $('#slider-header').carousel({
             interval: 10000,
-        });  
-            
-        $(document).ready(function () {
-            var itemsMainDiv = ('.MultiCarousel');
-            var itemsDiv = ('.MultiCarousel-inner');
-            var itemWidth = "";
-
-            $('.leftLst, .rightLst').click(function () {
-                var condition = $(this).hasClass("leftLst");
-                if (condition)
-                    click(0, this);
-                else
-                    click(1, this)
-            });
-
-            ResCarouselSize();
-
-
-
-
-            $(window).resize(function () {
-                ResCarouselSize();
-            });
-
-            //this function define the size of the items
-            function ResCarouselSize() {
-                var incno = 0;
-                var dataItems = ("data-items");
-                var itemClass = ('.item');
-                var id = 0;
-                var btnParentSb = '';
-                var itemsSplit = '';
-                var sampwidth = $(itemsMainDiv).width();
-                var bodyWidth = $('body').width();
-                $(itemsDiv).each(function () {
-                    id = id + 1;
-                    var itemNumbers = $(this).find(itemClass).length;
-                    btnParentSb = $(this).parent().attr(dataItems);
-                    itemsSplit = btnParentSb.split(',');
-                    $(this).parent().attr("id", "MultiCarousel" + id);
-
-
-                    if (bodyWidth >= 1200) {
-                        incno = itemsSplit[3];
-                        itemWidth = sampwidth / incno;
-                    }
-                    else if (bodyWidth >= 992) {
-                        incno = itemsSplit[2];
-                        itemWidth = sampwidth / incno;
-                    }
-                    else if (bodyWidth >= 768) {
-                        incno = itemsSplit[1];
-                        itemWidth = sampwidth / incno;
-                    }
-                    else {
-                        incno = itemsSplit[0];
-                        itemWidth = sampwidth / incno;
-                    }
-                    $(this).css({ 'transform': 'translateX(0px)', 'width': itemWidth * itemNumbers });
-                    $(this).find(itemClass).each(function () {
-                        $(this).outerWidth(itemWidth);
-                    });
-
-                    $(".leftLst").addClass("over");
-                    $(".rightLst").removeClass("over");
-
-                });
-            }
-
-
-            //this function used to move the items
-            function ResCarousel(e, el, s) {
-                var leftBtn = ('.leftLst');
-                var rightBtn = ('.rightLst');
-                var translateXval = '';
-                var divStyle = $(el + ' ' + itemsDiv).css('transform');
-                var values = divStyle.match(/-?[\d\.]+/g);
-                var xds = Math.abs(values[4]);
-                if (e == 0) {
-                    translateXval = parseInt(xds) - parseInt(itemWidth * s);
-                    $(el + ' ' + rightBtn).removeClass("over");
-
-                    if (translateXval <= itemWidth / 2) {
-                        translateXval = 0;
-                        $(el + ' ' + leftBtn).addClass("over");
-                    }
-                }
-                else if (e == 1) {
-                    var itemsCondition = $(el).find(itemsDiv).width() - $(el).width();
-                    translateXval = parseInt(xds) + parseInt(itemWidth * s);
-                    $(el + ' ' + leftBtn).removeClass("over");
-
-                    if (translateXval >= itemsCondition - itemWidth / 2) {
-                        translateXval = itemsCondition;
-                        $(el + ' ' + rightBtn).addClass("over");
-                    }
-                }
-                $(el + ' ' + itemsDiv).css('transform', 'translateX(' + -translateXval + 'px)');
-            }
-
-            //It is used to get some elements from btn
-            function click(ell, ee) {
-                var Parent = "#" + $(ee).parent().attr("id");
-                var slide = $(Parent).attr("data-slide");
-                ResCarousel(ell, Parent, slide);
-            }
-
         }); 
+        $(document).ready(function () {
+            (function ($) {
+                "use strict";
+                // manual carousel controls
+                $('.next').click(function () { $('.carousel').carousel('next'); return false; });
+                $('.prev').click(function () { $('.carousel').carousel('prev'); return false; });
+
+            })(jQuery);
+
+            $('#slider-layanan').carousel({
+                interval: 10000
+            })
+
+            $('#slider-layanan.carousel .carousel-item').each(function () {
+                var minPerSlide = 3;
+                var next = $(this).next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+                next.children(':first-child').clone().appendTo($(this));
+
+                for (var i = 0; i < minPerSlide; i++) {
+                    next = next.next();
+                    if (!next.length) {
+                        next = $(this).siblings(':first');
+                    }
+
+                    next.children(':first-child').clone().appendTo($(this));
+                }
+            });
+        });   
+        $(document).ready(function () {
+            (function ($) {
+                "use strict";
+                // manual carousel controls
+                $('.next').click(function () { $('.carousel').carousel('next'); return false; });
+                $('.prev').click(function () { $('.carousel').carousel('prev'); return false; });
+
+            })(jQuery);
+
+            $('#slider-event').carousel({
+                interval: 10000
+            })
+
+            $('#slider-event.carousel .carousel-item').each(function () {
+                var minPerSlide = 3;
+                var next = $(this).next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+                next.children(':first-child').clone().appendTo($(this));
+
+                for (var i = 0; i < minPerSlide; i++) {
+                    next = next.next();
+                    if (!next.length) {
+                        next = $(this).siblings(':first');
+                    }
+
+                    next.children(':first-child').clone().appendTo($(this));
+                }
+            });
+        });                           
     </script>
 </body>
 
