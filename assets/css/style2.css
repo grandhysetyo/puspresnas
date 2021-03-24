@@ -100,7 +100,7 @@
 /* Header */
 .bg-header {
     width: 100%;
-    background-image: url('/assets/images/bg-header.svg');
+    background-image: url('/puspresnas-template/assets/images/bg-header.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -454,7 +454,7 @@
 #slider-layanan .card-link {
     display: block;
     width: fit-content;
-    font-size: 2vh;
+    font-size: 14px;
     font-weight: 500;
     margin-top: auto;
     margin-bottom: 0;
@@ -470,7 +470,7 @@
 #slider-layanan .card-body{
     padding-left: 20%;
     color: #fff;
-    font-size: 2vh;
+    font-size: 14px;
 }
 /* carousel */
 @media (max-width: 768px) {
@@ -510,7 +510,7 @@
 
 /* Section Event */
 .bg-orange-grad{
-    background-image: url('/assets/images/bg-orange-grad.svg');
+    background-image: url('/puspresnas-template/assets/images/bg-orange-grad.svg');
     width:100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -548,7 +548,7 @@
 #slider-event .card-link {
     position: absolute;
     bottom: 0;    
-    font-size: 2vh;
+    font-size: 14px;
     font-weight: 500;    
     border-radius: 10px;
     color: white;
@@ -770,7 +770,7 @@
  /* Footer */
  .bg-footer{
      width: 100%;
-     background-image: url('/assets/images/bg-footer.svg');     
+     background-image: url('/puspresnas-template/assets/images/bg-footer.svg');     
      background-repeat: no-repeat;
      background-size: cover;
      /* height: 540px; */
