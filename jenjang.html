@@ -11,7 +11,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <link rel="stylesheet" href="assets/css/jenjang.css">
     <!-- Font Opensans -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
@@ -19,378 +20,232 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>SMA | Puspresnas</title>
     <style>
-        .card-img-top{
-            padding: 10px;
-            box-shadow: 1px;
-        }        
-
-        .btn-timeline {
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        outline: none;
-        }
-
-        /* TIMELINE
-        –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-        .timeline {
-        white-space: nowrap;
-        overflow-x: hidden;
-        }
-
-        .timeline ol {
-            font-size: 0;
-            width: 100vw;
-            padding: 250px 0;
-            transition: all 1s;
-        }
-
-        .timeline ol li {
-            position: relative;
-            display: inline-block;
-            list-style-type: none;
-            width: 160px;
-            height: 3px;
-            background: #D78428;
-        }
-        .timeline ol li .bulan{
-            position: absolute;
-            margin: -15px;
-            left: 100%;
-            color: #fff;
-            z-index: 1;
-        }
         
-        .timeline ol li:last-child {
-            width: 280px;
-        }
-
-        .timeline ol li:not(:first-child) {
-            margin-left: 14px;
-        }
-
-        .timeline ol li:not(:last-child)::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: calc(80% + 1px);
-            bottom: 0;
-            width: 115px;
-            height: 45px;
-            transform: translateY(-50%);
-            border-bottom-right-radius: 45% 100%;
-            border-top-right-radius: 45% 100%;
-            color: #fff;
-            background-image: url('/assets/images/bg-month.svg');
-            background-repeat: no-repeat;
-        }
-
-        .timeline ol li div {
-            position: absolute;
-            left: calc(100% + 7px);
-            width: 280px;
-            padding: 15px;
-            padding-left: 29px;
-            font-size: 1rem;
-            white-space: normal;
-            color: #D78428;
-            border-left: 1px solid #D78428;
-        }
-
-        .timeline ol li div::before {
-            content: '';
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 0;
-            height: 0;
-            border-style: solid;
-        }
-
-        .timeline ol li:nth-child(odd) div {
-            top: -40px;
-            transform: translateY(-100%);
-        }
-
-        .timeline ol li:nth-child(odd) div::before {
-            top: 0%;
-            left: -2%;
-            border-radius: 50%;
-            width: 10px;
-            height: 10px;
-            background-color: #D78428;
-        }
-
-        .timeline ol li:nth-child(even) div {
-        top: calc(100% + 40px);
-        }
-
-        .timeline ol li:nth-child(even) div::before {
-        top: -8px;
-        border-width: 8px 0 0 8px;
-        border-color: transparent transparent transparent #D78428;
-        }
-
-        .timeline time {
-        display: block;
-        font-size: 1.2rem;
-        font-weight: bold;
-        margin-bottom: 8px;
-        }
-
-
-        /* TIMELINE ARROWS
-        –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-        .timeline .arrows {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-        }
-
-        .timeline .arrows .arrow__prev {
-        margin-right: 20px;
-        }
-
-        .timeline .disabled {
-        opacity: .5;
-        }
-
-        .timeline .arrows img {
-        width: 45px;
-        height: 45px;
-        }
-
-
-        /* GENERAL MEDIA QUERIES
-        –––––––––––––––––––––––––––––––––––––––––––––––––– */
-        @media screen and (max-width: 599px) {
-        .timeline ol,
-        .timeline ol li {
-            width: auto; 
-        }
-        
-        .timeline ol {
-            padding: 0;
-            transform: none !important;
-        }
-        
-        .timeline ol li {
-            display: block;
-            height: auto;
-            background: transparent;
-        }
-        
-        .timeline ol li:first-child {
-            margin-top: 25px;
-        }
-        
-        .timeline ol li:not(:first-child) {
-            margin-left: auto;
-        }
-        
-        .timeline ol li div {
-            width: 94%;
-            height: auto !important;
-            margin: 0 auto 25px;
-        }
-        
-        .timeline ol li div {
-            position: static;
-        }
-        
-        .timeline ol li:nth-child(odd) div {
-            transform: none;
-        }
-        
-        .timeline ol li:nth-child(odd) div::before,
-        .timeline ol li:nth-child(even) div::before {
-            left: 50%;
-            top: 100%;
-            transform: translateX(-50%);
-            border: none;
-            border-left: 1px solid black;
-            height: 25px;
-        }
-        
-        .timeline ol li:last-child,
-        .timeline ol li:nth-last-child(2) div::before,
-        .timeline ol li:not(:last-child)::after,
-        .timeline .arrows {
-            display: none;
-        }
-        }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white txt-nav">
-        <div class="container">
-            <div class="d-flex flex-grow-1">
-                <span class="w-100 d-lg-none d-block">
-                    <!-- hidden spacer to center brand on mobile -->
-                </span>
-                <a class="navbar-brand" href="#">
-                    <img src="assets/images/logo.png" alt="" width="100px">
-                </a>
-                <div class="w-100 text-right">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+    <header class="bg-header2">
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container">
+                <div class="d-flex flex-grow-1">
+                    <!-- <span class="w-100 d-lg-none d-block">
+                         hidden spacer to center brand on mobile 
+                    </span> -->
+                    <a class="navbar-brand" href="#">                        
+                        <img src="assets/images/logo.svg" alt="" width="220px">
+                    </a>
+                    <div class="w-100 text-right">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
+                    <ul class="navbar-nav ml-auto flex-nowrap">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link ">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Profil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Ajang Talenta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">MTN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Wara - Wara</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">ZIWBK</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Kontak Kami</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="#" class="nav-link masuk">Masuk</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
-                <ul class="navbar-nav ml-auto flex-nowrap">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Beranda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Informasi Lomba</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Berita</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Galeri</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Kontak Kami</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <header class="bg-orange">
+        </nav>               
+    </header>
+    <section>
         <div class="container">
             <div class="row">
                 <div class="col-md-6">                    
-                    <h5 class="txt-title-white my-4 ml-2">Jenjang Sekolah Menengah Atas (SMA)</h5>
-                    
+                    <h5 class="title-orange-bold my-4 ml-2">Jenjang Sekolah Menengah Atas (SMA)</h5>                    
                 </div>
             </div>
         </div>
-    </header>
+    </section>
+    
     <!-- Lomba Jenjang SMA -->
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-md-4 mx-auto mt-3">
-                    <h3 class="text-center mt-3 txt-title-orange" data-aos="fade-up" data-aos-duration="2000">Lomba Jenjang SMA</h3>    
-                    <hr>                
-                </div>
-                
-            </div>
-            <div class="row justify-content-md-center">
-                <div class="col-md-3">
-                    <div class="card border-0" data-aos="fade-right" data-aos-duration="2000">                        
-                        <img class="card-img-top shadow-sm p-4 bg-white rounded rounded-lg" src="assets/images/logo-kopsi.jpg" alt="Layanan E-Sertifikat">                        
-                        <div class="card-body mt-3 p-0" >
-                            <a href="" class="card-title"><h5 class="txt-title-orange">E-Sertifikat Lomba</h5></a>
-                            <span class="badge p-0">Pelaksanaan: 27 Maret s.d 11 maret 2021</span>
-                            <span class="badge p-0">Seleksi: 27 Maret s.d 11 maret 2021</span>
-                            <a href="" class="badge txt-link-orange mt-3"><i class="fas fa-file-pdf"></i> Unduh Pedoman KSN tingkat Provinsi</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card border-0" data-aos="fade-right" data-aos-duration="2000">                        
-                        <img class="card-img-top shadow-sm p-4 bg-white rounded rounded-lg" src="assets/images/logo-kopsi.jpg" alt="Layanan E-Sertifikat">                        
-                        <div class="card-body mt-3 p-0" >
-                            <a href="" class="card-title"><h5 class="txt-title-orange">E-Sertifikat Lomba</h5></a>
-                            <span class="badge p-0">Pelaksanaan: 27 Maret s.d 11 maret 2021</span>
-                            <span class="badge p-0">Seleksi: 27 Maret s.d 11 maret 2021</span>
-                            <a href="" class="badge txt-link-orange mt-3"><i class="fas fa-file-pdf"></i> Unduh Pedoman KSN tingkat Provinsi</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card border-0" data-aos="fade-right" data-aos-duration="2000">                        
-                        <img class="card-img-top shadow-sm p-4 bg-white rounded rounded-lg" src="assets/images/logo-kopsi.jpg" alt="Layanan E-Sertifikat">                        
-                        <div class="card-body mt-3 p-0" >
-                            <a href="" class="card-title"><h5 class="txt-title-orange">E-Sertifikat Lomba</h5></a>
-                            <span class="badge p-0">Pelaksanaan: 27 Maret s.d 11 maret 2021</span>
-                            <span class="badge p-0">Seleksi: 27 Maret s.d 11 maret 2021</span>
-                            <a href="" class="badge txt-link-orange mt-3"><i class="fas fa-file-pdf"></i> Unduh Pedoman KSN tingkat Provinsi</a>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-            <div class="row justify-content-md-center">
-                <div class="col-md-3 mt-3">
-                    <div class="card border-0" data-aos="fade-right" data-aos-duration="2000">                        
-                        <img class="card-img-top shadow-sm p-4 bg-white rounded rounded-lg" src="assets/images/logo-kopsi.jpg" alt="Layanan E-Sertifikat">                        
-                        <div class="card-body mt-3 p-0" >
-                            <a href="" class="card-title"><h5 class="txt-title-orange">E-Sertifikat Lomba</h5></a>
-                            <span class="badge p-0">Pelaksanaan: 27 Maret s.d 11 maret 2021</span>
-                            <span class="badge p-0">Seleksi: 27 Maret s.d 11 maret 2021</span>
-                            <a href="" class="badge txt-link-orange mt-3"><i class="fas fa-file-pdf"></i> Unduh Pedoman KSN tingkat Provinsi</a>
-                        </div>
-                    </div>
+                <div class="col-md-4 mx-auto mt-5">
+                    <h4 class="title-section">Lomba Jenjang SMA</h4>                    
                 </div>
             </div>
+            <div class="row justify-content-md-center" data-aos="fade-right" data-aos-duration="2000">
+                <div class="col-md-3 text-center mb-5">
+                    <div class="card border-0">                        
+                        <img class="card-img-top shadow-sm p-4 bg-white rounded rounded-lg" src="assets/images/logo-kopsi.jpg" alt="Layanan E-Sertifikat">                        
+                        <div class="card-body mt-3 p-0" >
+                            <a href="#" class="card-title link-orange"><h5>E-Sertifikat Lomba</h5></a>
+                            <span class="badge badge-gray p-0"><i class="fas fa-calendar-day"></i> 27 Maret s.d 11 maret 2021</span>                           
+                            <a href="#" class="link-unduh mt-3 mx-auto"><i class="fas fa-file-pdf"></i> Unduh Pedoman</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center mb-5">
+                    <div class="card border-0">                        
+                        <img class="card-img-top shadow-sm p-4 bg-white rounded rounded-lg" src="assets/images/logo-kopsi.jpg" alt="Layanan E-Sertifikat">                        
+                        <div class="card-body mt-3 p-0" >
+                            <a href="#" class="card-title link-orange"><h5>E-Sertifikat Lomba</h5></a>
+                            <span class="badge badge-gray p-0"><i class="fas fa-calendar-day"></i> 27 Maret s.d 11 maret 2021</span>                           
+                            <a href="#" class="link-unduh mt-3 mx-auto"><i class="fas fa-file-pdf"></i> Unduh Pedoman</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center mb-5">
+                    <div class="card border-0">                        
+                        <img class="card-img-top shadow-sm p-4 bg-white rounded rounded-lg" src="assets/images/logo-kopsi.jpg" alt="Layanan E-Sertifikat">                        
+                        <div class="card-body mt-3 p-0" >
+                            <a href="#" class="card-title link-orange"><h5>E-Sertifikat Lomba</h5></a>
+                            <span class="badge badge-gray p-0"><i class="fas fa-calendar-day"></i> 27 Maret s.d 11 maret 2021</span>                           
+                            <a href="#" class="link-unduh mt-3 mx-auto"><i class="fas fa-file-pdf"></i> Unduh Pedoman</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center mb-5">
+                    <div class="card border-0">                        
+                        <img class="card-img-top shadow-sm p-4 bg-white rounded rounded-lg" src="assets/images/logo-kopsi.jpg" alt="Layanan E-Sertifikat">                        
+                        <div class="card-body mt-3 p-0" >
+                            <a href="#" class="card-title link-orange"><h5>E-Sertifikat Lomba</h5></a>
+                            <span class="badge badge-gray p-0"><i class="fas fa-calendar-day"></i> 27 Maret s.d 11 maret 2021</span>                           
+                            <a href="#" class="link-unduh mt-3 mx-auto"><i class="fas fa-file-pdf"></i> Unduh Pedoman</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center mb-5">
+                    <div class="card border-0">                        
+                        <img class="card-img-top shadow-sm p-4 bg-white rounded rounded-lg" src="assets/images/logo-kopsi.jpg" alt="Layanan E-Sertifikat">                        
+                        <div class="card-body mt-3 p-0" >
+                            <a href="#" class="card-title link-orange"><h5>E-Sertifikat Lomba</h5></a>
+                            <span class="badge badge-gray p-0"><i class="fas fa-calendar-day"></i> 27 Maret s.d 11 maret 2021</span>                           
+                            <a href="#" class="link-unduh mt-3 mx-auto"><i class="fas fa-file-pdf"></i> Unduh Pedoman</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center mb-5">
+                    <div class="card border-0">                        
+                        <img class="card-img-top shadow-sm p-4 bg-white rounded rounded-lg" src="assets/images/logo-kopsi.jpg" alt="Layanan E-Sertifikat">                        
+                        <div class="card-body mt-3 p-0" >
+                            <a href="#" class="card-title link-orange"><h5>E-Sertifikat Lomba</h5></a>
+                            <span class="badge badge-gray p-0"><i class="fas fa-calendar-day"></i> 27 Maret s.d 11 maret 2021</span>                           
+                            <a href="#" class="link-unduh mt-3 mx-auto"><i class="fas fa-file-pdf"></i> Unduh Pedoman</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center mb-5">
+                    <div class="card border-0">                        
+                        <img class="card-img-top shadow-sm p-4 bg-white rounded rounded-lg" src="assets/images/logo-kopsi.jpg" alt="Layanan E-Sertifikat">                        
+                        <div class="card-body mt-3 p-0" >
+                            <a href="#" class="card-title link-orange"><h5>E-Sertifikat Lomba</h5></a>
+                            <span class="badge badge-gray p-0"><i class="fas fa-calendar-day"></i> 27 Maret s.d 11 maret 2021</span>                           
+                            <a href="#" class="link-unduh mt-3 mx-auto"><i class="fas fa-file-pdf"></i> Unduh Pedoman</a>
+                        </div>
+                    </div>
+                </div>           
+            </div>            
         </div>
     </section>
     <!-- Timeline -->
     <section class="container timeline mt-5">
         <div class="row">
             <div class="col">
-                <h4 class="txt-title-orange">Timeline Lomba</h4>            
-                <hr class="float-left">  
+                <h4 class="title-section">Timeline Lomba</h4>                            
             </div>
         </div>
         <div class="row">
             <ol>
                 <li>
                     <div>
-                        <time>Step 01</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        <time>Step 01</time> 
+                        <span>20-12-12 | KOSN</span> <br>
+                        <span>20-12-12 | KOSN</span> <br>
+                        <span>20-12-12 | KOSN</span> <br>
                     </div>  
                     <h5 class="bulan">Jan</h5>           
                 </li>
                 <li>
                     <div>
-                        <time>Step 02</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
+                        <time>Step 02</time>
+                        <span>20-12-12 | KOSN</span> <br>
+                        <span>20-12-12 | KOSN</span> <br>
+                        <span>20-12-12 | KOSN</span> <br>
                     </div>
                     <h5 class="bulan">Feb</h5>           
                 </li>
                 <li>
                     <div>
-                        <time>Step 03</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
+                        <time>Step 03</time>
+                        <span>20-12-12 | KOSN</span> <br>
+                        <span>20-12-12 | KOSN</span> <br>
+                        <span>20-12-12 | KOSN</span> <br>
                     </div>
                     <h5 class="bulan">Mar</h5>           
                 </li>
                 <li>
                     <div>
-                        <time>Step 04</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                        <time>Step 04</time> 
+                        <span>20-12-12 | KOSN</span> <br>
+                        <span>20-12-12 | KOSN</span> <br>
+                        <span>20-12-12 | KOSN</span> <br>
                     </div>
                     <h5 class="bulan">Apr</h5>           
                 </li>
                 <li>
                     <div>
-                        <time>Step 05</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                        <time>Step 05</time> 
+                        <span>20-12-12 | KOSN</span> <br>
+                        <span>20-12-12 | KOSN</span> <br>
+                        <span>20-12-12 | KOSN</span> <br>
                     </div>
                     <h5 class="bulan">Mei</h5>           
                 </li>
                 <li>
                     <div>
-                        <time>Step 06</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                        <time>Step 06</time>
+                        <span>20-12-12 | KOSN</span> <br>
+                        <span>20-12-12 | KOSN</span> <br>
+                        <span>20-12-12 | KOSN</span> <br>
                     </div>
                     <h5 class="bulan">Jun</h5>
                 </li>
                 <li>
                     <div>
-                        <time>Step 07</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                        <time>Step 07</time> 
+                        <span>20-12-12 | KOSN</span> <br>
+                        <span>20-12-12 | KOSN</span> <br>
+                        <span>20-12-12 | KOSN</span> <br>
                     </div>
                     <h5 class="bulan">Jul</h5>
                 </li>
                 <li>
                     <div>
-                        <time>Step 08</time> Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus, euismod quis ante.
-                    </div>
+                        <time>Step 08</time>
+                        <span>20-12-12 | KOSN</span> <br>
+                        <span>20-12-12 | KOSN</span> <br>
+                        <span>20-12-12 | KOSN</span> <br>
                     <h5 class="bulan">Augt</h5>
                 </li>
                 
@@ -401,10 +256,10 @@
         
         <div class="arrows">
             <button class="btn-timeline arrow  arrow__prev disabled" disabled>
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_prev.svg" alt="prev timeline arrow">
+            <img src="assets/images/arrow_prev.svg" alt="prev timeline arrow">
             </button>
             <button class="btn-timeline arrow arrow__next">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_next.svg" alt="next timeline arrow">
+            <img src="assets/images/arrow_next.svg" alt="next timeline arrow">
             </button>
         </div>
     </section>
@@ -412,64 +267,85 @@
     <section>
         <div class="container mt-5">
             <div class="row">
-                <div class="col-md-5 offset-md-1">
+                <div class="col-md-5 offset-md-1">                    
+                                           
                     <div class="row">
-                        <div class="col">
-                            <h4 class="txt-title-orange">Pengumuman</h4>                        
-                            <hr class="float-left">
-                        </div>                        
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col-12 mb-3">
-                            <a href="" class="txt-link-orange2">Pengumuman Panduan Pelaksanaan Lomba LDBI NSDC <br><span class="badge">2 Februari 2021</span></a>
-                            <hr class="hr-pengumuman w-100">
+                        <div class="col-md-12">
+                            <h4 class="title-section ml-0">Kabar Prestasi</h4>
                         </div>
-                        <div class="col-12 mb-3">
-                            <a href="" class="txt-link-orange2">Pengumuman Panduan Pelaksanaan Lomba LDBI NSDC <br><span class="badge">2 Februari 2021</span></a>
-                            <hr class="hr-pengumuman w-100">
+                        <div class="col-md-12">                                        
+                            <a href="#" class="pengumuman-card">        
+                                <div>
+                                    <h5>08</h5>
+                                    <h5>Maret</h5>
+                                    <h5>2021</h5>
+                                </div>                                                                                                
+                                <h5>Pengumuman Panduan Pelaksanaan Lomba LDBI NSDC</h5>                            
+                            </a>                    
                         </div>
-                        <div class="col-12 mb-3">
-                            <a href="" class="txt-link-orange2">Pengumuman Panduan Pelaksanaan Lomba LDBI NSDC <br><span class="badge">2 Februari 2021</span></a>
-                            <hr class="hr-pengumuman w-100">
+                        <div class="col-md-12">                                        
+                            <a href="#" class="pengumuman-card">        
+                                <div>
+                                    <h5>08</h5>
+                                    <h5>Maret</h5>
+                                    <h5>2021</h5>
+                                </div>                                                                                                
+                                <h5>Pengumuman Panduan Pelaksanaan Lomba LDBI NSDC</h5>                            
+                            </a>                    
                         </div>
-                        <div class="col-12 mb-3">
-                            <a href="" class="txt-link-orange2">Pengumuman Panduan Pelaksanaan Lomba LDBI NSDC <br><span class="badge">2 Februari 2021</span></a>
-                            <hr class="hr-pengumuman w-100">
+                        <div class="col-md-12">                                        
+                            <a href="#" class="pengumuman-card">        
+                                <div>
+                                    <h5>08</h5>
+                                    <h5>Maret</h5>
+                                    <h5>2021</h5>
+                                </div>                                                                                                
+                                <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h5>                            
+                            </a>                    
                         </div>
-                        
-                    </div>                
+                        <div class="col-md-12">                                        
+                            <a href="#" class="pengumuman-card">        
+                                <div>
+                                    <h5>08</h5>
+                                    <h5>Maret</h5>
+                                    <h5>2021</h5>
+                                </div>                                                                                                
+                                <h5>Pengumuman Panduan Pelaksanaan Lomba LDBI NSDC</h5>                            
+                            </a>                    
+                        </div>
+                    </div>               
                 </div>
                 <div class="col-md-5 offset-md-1">
                     <div class="row">
                         <div class="col">
-                            <h4 class="txt-title-orange">Berita Terbaru</h4>
-                            <hr class="float-left">
+                            <h4 class="title-section ml-0">Berita Terbaru</h4>                            
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
                             <ul class="list-unstyled">
-                                <li class="media mb-4">
+                                <li class="media mb-2">
                                   <img src="assets/images/berita-img.png" class="rounded mr-3 bg-light" alt="" width="40%" >
                                   <div class="media-body">
                                         <span class="badge badge-pill badge-orange text-white">Jenjang SMP</span>
-                                        <span class="txt-span d-flex my-2">12 Februari</span>
+                                        <span class="badge p-0 d-flex my-2">12 Februari</span>
                                         <h6 class="mb-1">SK Peringkat 10 Besar Provinsi Pada Lomba KOSN SD-SMP Tahun 2020 </h5>    
-                                        <a href="" class="txt-link-orange">Selengkapnya</a>                          
+                                        <a href="#" class="badge btn-orange3">Selengkapnya</a>                          
                                   </div>
                                 </li>
-                                <li class="media mb-4">
+                                <li class="media mb-2">
                                     <img src="assets/images/logo-kopsi.jpg" class="rounded mr-3 bg-light" alt="" width="40%">
                                     <div class="media-body">
                                         <span class="badge badge-pill badge-orange text-white">Jenjang SMA</span>
-                                        <span class="txt-span d-flex my-2">12 Februari</span>
+                                        <span class="badge p-0 d-flex my-2">12 Februari</span>
                                         <h6 class=" mb-1">Pengumuman Peraih Medali KOSN SD – SMP Tingkat Nasional Tahun 2020 </h5>  
-                                            <a href="" class="txt-link-orange">Selengkapnya</a>                          
+                                            <a href="#" class="badge btn-orange3">Selengkapnya</a>                          
                                     </div>
-                                </li>                       
+                                </li> 
+                                                     
                                 
                             </ul>
-                            <a href="" class="float-right txt-link-orange">Berita lainya...</a>
+                            <a href="#" class="btn btn-orange2 btn-radius float-right">Berita lainya...</a>
                         </div>
                     </div>
                 </div>
@@ -477,80 +353,28 @@
         </div>
     </section>
     
-    <footer class="bg-light">
+    <footer class="bg-footer">
         <div class="container">
-            <div class="row py-5">
+            <div class="row">                
                 <div class="col-md-4">
-                    <img src="assets/images/logo.png" alt="" width="60%">
-                    <h6 class="txt-title-orange">Pusat Prestasi Nasional</h5>
-                    <p class="txt-title-black">Sekretariat Jendral <br>Kementrian Pendidikan dan Kebudayaan</p>
-                    
-                    <ul class="footer-ul">
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <ul>
-                                Komplek Kementrian Pendidikan dan Kebudayaan, Gedung C, Lantai 19 <br>Jend Sudirman, Senayan, Jakarta <br> 10270
-                            </ul>                            
-                        </li>
-                        <li>
-                            <i class="fas fa-phone"></i>
-                            <ul>021-5731177</ul>                             
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-8 py-3">
-                    <div class="row py-5">
-                        <div class="col-md-4">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h4 class="txt-title-orange">Profile</h4>
-                                </div>                                
-                            </div>
-                            <div class="row">
-                                <ul class="footer-ul">
-                                    <li><a href="">Visi Misi</a></li>
-                                    <li><a href="">Data Prestasi</a></li>
-                                    <li><a href="">Bagan Puspresnas</a></li>                                
-                                </ul>
-                            </div>                            
-                        </div>
-                        <div class="col-md-4">
-                            <div class="row"> 
-                                <div class="col-md-12">
-                                    <h4 class="txt-title-orange">Informasi Lomba</h4>                                
-                                </div>                               
-                                
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4 p-0">
-                                    <ul class="footer-ul">
-                                        <li><a href="">SD</a></li>
-                                        <li><a href="">SMP</a></li>
-                                        <li><a href="">SMA</a></li>                               
-                                    </ul>
-                                </div>
-                                <div class="col-md-8">
-                                    <ul class="footer-ul">
-                                        <li><a href="">SMK</a></li>
-                                        <li><a href="">Pendidikan Tinggi</a></li>
-                                        <li><a href="">Pendidikan Khusus</a></li>                                
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <ul style="list-style-type: none;">
-                                <li><a href=""><h4 class="txt-title-orange">Artikel</h4></a></li>
-                                <li class="my-4"><a href=""><h4 class="txt-title-orange">Galeri</h4></a></li>
-                                <li><a href=""><h4 class="txt-title-orange">Kontak Kami</h4></a></li>
-                            </ul>
-                        </div>
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.svg" alt="" width="100%">
+                        <h5>Pusat Prestasi Nasional</h5>
+                        <p>Sekretariat Jendral <br> Kementrian Pendidikan dan Kebudayaan</p>
                     </div>                    
                 </div>
+                <div class="col-md-5 offset-md-3">
+                    <h3 class="text-white">Kontak Kami</h3>
+                    <div class="kontak">                        
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <p>Komplek Kementrian Pendidikan dan Kebudayaan, Gedung C, Lantai 19 Jl. Jendral Sudirman, Senayan, Jakarta - 10270</p>                                                              
+                    </div>
+                    <div class="kontak">
+                        <span><i class="fas fa-phone"></i></span>
+                        <p>021-5731177</p>  
+                    </div>                                                          
+                </div>
             </div>
-        </div>
-        <div class="bg-orange text-center text-white">
-            &copy; Pusat Prestasi Nasional - Kemendikbud - 2021
         </div>
     </footer>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -566,125 +390,125 @@
         AOS.init(); 
         (function() {
 
-// VARIABLES
-const timeline = document.querySelector(".timeline ol"),
-  elH = document.querySelectorAll(".timeline li > div"),
-  arrows = document.querySelectorAll(".timeline .arrows .arrow"),
-  arrowPrev = document.querySelector(".timeline .arrows .arrow__prev"),
-  arrowNext = document.querySelector(".timeline .arrows .arrow__next"),
-  firstItem = document.querySelector(".timeline li:first-child"),
-  lastItem = document.querySelector(".timeline li:last-child"),
-  xScrolling = 280,
-  disabledClass = "disabled";
+            // VARIABLES
+            const timeline = document.querySelector(".timeline ol"),
+            elH = document.querySelectorAll(".timeline li > div"),
+            arrows = document.querySelectorAll(".timeline .arrows .arrow"),
+            arrowPrev = document.querySelector(".timeline .arrows .arrow__prev"),
+            arrowNext = document.querySelector(".timeline .arrows .arrow__next"),
+            firstItem = document.querySelector(".timeline li:first-child"),
+            lastItem = document.querySelector(".timeline li:last-child"),
+            xScrolling = 280,
+            disabledClass = "disabled";
 
-// START
-window.addEventListener("load", init);
+            // START
+            window.addEventListener("load", init);
 
-function init() {
-  setEqualHeights(elH);
-  animateTl(xScrolling, arrows, timeline);
-  setSwipeFn(timeline, arrowPrev, arrowNext);
-  setKeyboardFn(arrowPrev, arrowNext);
-}
+            function init() {
+            setEqualHeights(elH);
+            animateTl(xScrolling, arrows, timeline);
+            setSwipeFn(timeline, arrowPrev, arrowNext);
+            setKeyboardFn(arrowPrev, arrowNext);
+            }
 
-// SET EQUAL HEIGHTS
-function setEqualHeights(el) {
-  let counter = 0;
-  for (let i = 0; i < el.length; i++) {
-    const singleHeight = el[i].offsetHeight;
+            // SET EQUAL HEIGHTS
+            function setEqualHeights(el) {
+            let counter = 0;
+            for (let i = 0; i < el.length; i++) {
+                const singleHeight = el[i].offsetHeight;
 
-    if (counter < singleHeight) {
-      counter = singleHeight;
-    }
-  }
+                if (counter < singleHeight) {
+                counter = singleHeight;
+                }
+            }
 
-  for (let i = 0; i < el.length; i++) {
-    el[i].style.height = `${counter}px`;
-  }
-}
+            for (let i = 0; i < el.length; i++) {
+                el[i].style.height = `${counter}px`;
+            }
+            }
 
-// CHECK IF AN ELEMENT IS IN VIEWPORT
-// http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
-function isElementInViewport(el) {
-  const rect = el.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-}
+            // CHECK IF AN ELEMENT IS IN VIEWPORT
+            // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+            function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+            }
 
-// SET STATE OF PREV/NEXT ARROWS
-function setBtnState(el, flag = true) {
-  if (flag) {
-    el.classList.add(disabledClass);
-  } else {
-    if (el.classList.contains(disabledClass)) {
-      el.classList.remove(disabledClass);
-    }
-    el.disabled = false;
-  }
-}
+            // SET STATE OF PREV/NEXT ARROWS
+            function setBtnState(el, flag = true) {
+            if (flag) {
+                el.classList.add(disabledClass);
+            } else {
+                if (el.classList.contains(disabledClass)) {
+                el.classList.remove(disabledClass);
+                }
+                el.disabled = false;
+            }
+            }
 
-// ANIMATE TIMELINE
-function animateTl(scrolling, el, tl) {
-  let counter = 0;
-  for (let i = 0; i < el.length; i++) {
-    el[i].addEventListener("click", function() {
-      if (!arrowPrev.disabled) {
-        arrowPrev.disabled = true;
-      }
-      if (!arrowNext.disabled) {
-        arrowNext.disabled = true;
-      }
-      const sign = (this.classList.contains("arrow__prev")) ? "" : "-";
-      if (counter === 0) {
-        tl.style.transform = `translateX(-${scrolling}px)`;
-      } else {
-        const tlStyle = getComputedStyle(tl);
-        // add more browser prefixes if needed here
-        const tlTransform = tlStyle.getPropertyValue("-webkit-transform") || tlStyle.getPropertyValue("transform");
-        const values = parseInt(tlTransform.split(",")[4]) + parseInt(`${sign}${scrolling}`);
-        tl.style.transform = `translateX(${values}px)`;
-      }
+            // ANIMATE TIMELINE
+            function animateTl(scrolling, el, tl) {
+            let counter = 0;
+            for (let i = 0; i < el.length; i++) {
+                el[i].addEventListener("click", function() {
+                if (!arrowPrev.disabled) {
+                    arrowPrev.disabled = true;
+                }
+                if (!arrowNext.disabled) {
+                    arrowNext.disabled = true;
+                }
+                const sign = (this.classList.contains("arrow__prev")) ? "" : "-";
+                if (counter === 0) {
+                    tl.style.transform = `translateX(-${scrolling}px)`;
+                } else {
+                    const tlStyle = getComputedStyle(tl);
+                    // add more browser prefixes if needed here
+                    const tlTransform = tlStyle.getPropertyValue("-webkit-transform") || tlStyle.getPropertyValue("transform");
+                    const values = parseInt(tlTransform.split(",")[4]) + parseInt(`${sign}${scrolling}`);
+                    tl.style.transform = `translateX(${values}px)`;
+                }
 
-      setTimeout(() => {
-        isElementInViewport(firstItem) ? setBtnState(arrowPrev) : setBtnState(arrowPrev, false);
-        isElementInViewport(lastItem) ? setBtnState(arrowNext) : setBtnState(arrowNext, false);
-      }, 1100);
+                setTimeout(() => {
+                    isElementInViewport(firstItem) ? setBtnState(arrowPrev) : setBtnState(arrowPrev, false);
+                    isElementInViewport(lastItem) ? setBtnState(arrowNext) : setBtnState(arrowNext, false);
+                }, 1100);
 
-      counter++;
-    });
-  }
-}
+                counter++;
+                });
+            }
+            }
 
-// ADD SWIPE SUPPORT FOR TOUCH DEVICES
-function setSwipeFn(tl, prev, next) {
-  const hammer = new Hammer(tl);
-  hammer.on("swipeleft", () => next.click());
-  hammer.on("swiperight", () => prev.click());
-}
+            // ADD SWIPE SUPPORT FOR TOUCH DEVICES
+            function setSwipeFn(tl, prev, next) {
+            const hammer = new Hammer(tl);
+            hammer.on("swipeleft", () => next.click());
+            hammer.on("swiperight", () => prev.click());
+            }
 
-// ADD BASIC KEYBOARD FUNCTIONALITY
-function setKeyboardFn(prev, next) {
-  document.addEventListener("keydown", (e) => {
-    if ((e.which === 37) || (e.which === 39)) {
-      const timelineOfTop = timeline.offsetTop;
-      const y = window.pageYOffset;
-      if (timelineOfTop !== y) {
-        window.scrollTo(0, timelineOfTop);
-      }
-      if (e.which === 37) {
-        prev.click();
-      } else if (e.which === 39) {
-        next.click();
-      }
-    }
-  });
-}
+            // ADD BASIC KEYBOARD FUNCTIONALITY
+            function setKeyboardFn(prev, next) {
+            document.addEventListener("keydown", (e) => {
+                if ((e.which === 37) || (e.which === 39)) {
+                const timelineOfTop = timeline.offsetTop;
+                const y = window.pageYOffset;
+                if (timelineOfTop !== y) {
+                    window.scrollTo(0, timelineOfTop);
+                }
+                if (e.which === 37) {
+                    prev.click();
+                } else if (e.which === 39) {
+                    next.click();
+                }
+                }
+            });
+            }
 
-})();       
+            })();       
     </script>
 </body>
 

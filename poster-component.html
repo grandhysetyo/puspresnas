@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="assets/images/kemendikbud.png" type="image/x-icon">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1e6b6f692c.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style2.css"> 
+    <!-- Font Opensans -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="assets/lib/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/lib/slick-1.8.1/slick/slick-theme.css"/>
+    
+    <title>Beranda | Puspresnas</title>
+    <style>        
+       
+
+               
+
+        /* ul */
+        .ul__list--inline {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .ul__list--inline > li {
+            display: inline-block;
+        }
+        .ul__list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }       
+
+        /* slider */
+        .images__slider img{
+            max-width: 100%;
+        } 
+        .images__slider img{
+            object-fit: contain;
+            width: 350px;
+            height: 350px;
+        }
+        .images__slider a{
+            font-size: 13px;
+            text-align: center;
+            color: #3e3c3c;
+        }
+        @media screen and(max-width: 768px){
+            .images__slider img{
+                width: 350px;
+            }
+        }
+
+        @media screen and(max-width: 576px){
+            .images__slider img{
+                width: 280px;
+                margin: 0 auto;
+            }
+        }
+
+        .slider__offset{
+            width: 1000px;
+        }
+        @media screen and(max-width: 1024px){
+            
+            .slider__offset{
+                width: 800px;
+            }
+        }
+
+        @media screen and(max-width: 576px){
+            .slider__offset{
+                width: 100%;
+            }
+        }
+        .bg__grub--slider{
+            background-color: #d0d0d026;
+            border-radius: 20px;
+        }
+
+        .slider__arrow li {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            background-color: #E78724;
+            color: white;
+            border-radius: 50%;
+            transition: 0.5s;
+        }
+        .slider__arrow li:hover {
+            box-shadow: 0px 10px 40px #3e3c3c 7a;
+        }
+        .slider__arrow li i {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+	<section class="overflow-hidden position-relative">
+		<div class="container">
+			<div class="bg__grub--slider p-3">
+				<div class="row pt-5 pb-5 pl-4">
+					<div class="col-md-5 col-lg-4 pb-5 text-center text-md-left pb-md-0 my-auto">
+						<h3 class="mb-3">Poster Prestasi</h3>
+						<p>Visualisasi ide dalam bentuk gambar oleh #sobatprestasi</p>
+                        <a href="">Lihat lebih banyak</a>
+
+						<ul class="ul__list--inline slider__arrow">
+							<li class="arrow__left pointer mr-3 position-relative"><i class="fa fa-chevron-left" aria-hidden="true"></i></li>
+							<li class="arrow__right pointer position-relative"><i class="fa fa-chevron-right" aria-hidden="true"></i></li>
+						</ul>
+
+					</div>
+					<div class="col-md-7 col-lg-8 my-auto">
+                        <ul class="ul__list--inline slider__offset">
+                            <li class="pl-3 pr-3 images__slider no__outline">
+                                <img src="assets/poster/1.png" alt="">
+                                <a href="">
+                                    <h3>100 K</h3>
+                                    <p>admin puspresnas</p>
+                                </a>
+                            </li>
+                            <li class="pl-3 pr-3 images__slider no__outline">
+                                <img src="assets/poster/2.png" alt="">
+                                <a href="">
+                                    <h3>100 K</h3>
+                                    <p>admin puspresnas</p>
+                                </a>
+                            </li>
+                            <li class="pl-3 pr-3 images__slider no__outline">
+                                <img src="assets/poster/3.jpg" alt="">
+                                <a href="">
+                                    <h3>100 K</h3>
+                                    <p>admin puspresnas</p>
+                                </a>
+                            </li>
+                            <li class="pl-3 pr-3 images__slider no__outline">
+                                <img src="assets/poster/4.jpg" alt="">
+                                <a href="">
+                                    <h3>100 K</h3>
+                                    <p>admin puspresnas</p>
+                                </a>
+                            </li>
+                        </ul>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <footer class="bg-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.svg" alt="" width="100%">
+                        <h5>Pusat Prestasi Nasional</h5>
+                        <p>Sekretariat Jendral <br> Kementrian Pendidikan dan Kebudayaan</p>
+                    </div>
+                </div>
+                <div class="col-md-5 offset-md-3">
+                    <h3 class="text-white">Kontak Kami</h3>
+                    <div class="kontak">
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <p>Komplek Kementrian Pendidikan dan Kebudayaan, Gedung C, Lantai 19 Jl. Jendral Sudirman,
+                            Senayan, Jakarta - 10270</p>
+                    </div>
+                    <div class="kontak">
+                        <span><i class="fas fa-phone"></i></span>
+                        <p>021-5731177</p>
+                    </div>
+
+                    <ul class="sosmed">
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->        
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+<script>
+    $('.slider__offset').slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			arrows: true,
+			prevArrow: $(".arrow__left"),
+			nextArrow: $(".arrow__right"),
+			fade: false,
+			infinite: true,
+			autoplay: true,
+			pauseOnHover:true,
+			focusOnSelect: true,
+			centerPadding: 0,
+			slideMargin: 10,
+			centerPadding: 0,
+			responsive: [
+			{
+				breakpoint: 1140,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 577,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+			}
+			]
+		});
+        </script>
+</html>
