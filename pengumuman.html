@@ -11,7 +11,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
     <!-- Font Opensans -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
@@ -22,52 +22,64 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white txt-nav shadow-sm">
-        <div class="container">
-            <div class="d-flex flex-grow-1">
-                <span class="w-100 d-lg-none d-block">
-                    <!-- hidden spacer to center brand on mobile -->
-                </span>
-                <a class="navbar-brand" href="#">
-                    <img src="assets/images/logo.png" alt="" width="100px">
-                </a>
-                <div class="w-100 text-right">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+    <header class="bg-header2">
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container">
+                <div class="d-flex flex-grow-1">
+                    <!-- <span class="w-100 d-lg-none d-block">
+                         hidden spacer to center brand on mobile 
+                    </span> -->
+                    <a class="navbar-brand" href="#">                        
+                        <img src="assets/images/logo.svg" alt="" width="220px">
+                    </a>
+                    <div class="w-100 text-right">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
+                    <ul class="navbar-nav ml-auto flex-nowrap">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Profil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Ajang Talenta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">MTN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Wara - Wara</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">ZIWBK</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Kontak Kami</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="#" class="nav-link masuk">Masuk</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
-                <ul class="navbar-nav ml-auto flex-nowrap">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Beranda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Informasi Lomba</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Berita</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Galeri</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Kontak Kami</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        </nav>               
+    </header>
     
     <!-- Content -->
     <div class="container mt-5 mb-2">
         <div class="row">
             <div class="col-md-7 mx-auto ">
-                <h4 class="txt-title-orange">Pengumuman Panduan Pelaksanaan Lomba LDBI NSDC</h4>
-                <span class="badge badge-pill badge-orange text-white">Jenajang SMA</span>
+                <h4 class="title-orange-bold">Pengumuman Panduan Pelaksanaan Lomba LDBI NSDC</h4>
+                <span class="badge badge-pill badge-orange text-white">Jenjang SMA</span>
                 <span class="txt-span">| 12 Februari 2021</span>
                 <p class="txt-title-orange mt-4">Lorem ipsum</p>
                 <p class="txt-p text-justify mt-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
@@ -77,80 +89,28 @@
         </div>
         
     </div>
-    <footer class="bg-light">
+    <footer class="bg-footer">
         <div class="container">
-            <div class="row py-5">
+            <div class="row">                
                 <div class="col-md-4">
-                    <img src="assets/images/logo.png" alt="" width="60%">
-                    <h6 class="txt-title-orange">Pusat Prestasi Nasional</h5>
-                    <p class="txt-title-black">Sekretariat Jendral <br>Kementrian Pendidikan dan Kebudayaan</p>
-                    
-                    <ul class="footer-ul">
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <ul>
-                                Komplek Kementrian Pendidikan dan Kebudayaan, Gedung C, Lantai 19 <br>Jend Sudirman, Senayan, Jakarta <br> 10270
-                            </ul>                            
-                        </li>
-                        <li>
-                            <i class="fas fa-phone"></i>
-                            <ul>021-5731177</ul>                             
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-8 py-3">
-                    <div class="row py-5">
-                        <div class="col-md-4">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h4 class="txt-title-orange">Profile</h4>
-                                </div>                                
-                            </div>
-                            <div class="row">
-                                <ul class="footer-ul">
-                                    <li><a href="">Visi Misi</a></li>
-                                    <li><a href="">Data Prestasi</a></li>
-                                    <li><a href="">Bagan Puspresnas</a></li>                                
-                                </ul>
-                            </div>                            
-                        </div>
-                        <div class="col-md-4">
-                            <div class="row"> 
-                                <div class="col-md-12">
-                                    <h4 class="txt-title-orange">Informasi Lomba</h4>                                
-                                </div>                               
-                                
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4 p-0">
-                                    <ul class="footer-ul">
-                                        <li><a href="">SD</a></li>
-                                        <li><a href="">SMP</a></li>
-                                        <li><a href="">SMA</a></li>                               
-                                    </ul>
-                                </div>
-                                <div class="col-md-8">
-                                    <ul class="footer-ul">
-                                        <li><a href="">SMK</a></li>
-                                        <li><a href="">Pendidikan Tinggi</a></li>
-                                        <li><a href="">Pendidikan Khusus</a></li>                                
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <ul style="list-style-type: none;">
-                                <li><a href=""><h4 class="txt-title-orange">Artikel</h4></a></li>
-                                <li class="my-4"><a href=""><h4 class="txt-title-orange">Galeri</h4></a></li>
-                                <li><a href=""><h4 class="txt-title-orange">Kontak Kami</h4></a></li>
-                            </ul>
-                        </div>
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.svg" alt="" width="100%">
+                        <h5>Pusat Prestasi Nasional</h5>
+                        <p>Sekretariat Jendral <br> Kementrian Pendidikan dan Kebudayaan</p>
                     </div>                    
                 </div>
+                <div class="col-md-5 offset-md-3">
+                    <h3 class="text-white">Kontak Kami</h3>
+                    <div class="kontak">                        
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <p>Komplek Kementrian Pendidikan dan Kebudayaan, Gedung C, Lantai 19 Jl. Jendral Sudirman, Senayan, Jakarta - 10270</p>                                                              
+                    </div>
+                    <div class="kontak">
+                        <span><i class="fas fa-phone"></i></span>
+                        <p>021-5731177</p>  
+                    </div>                                                          
+                </div>
             </div>
-        </div>
-        <div class="bg-orange text-center text-white">
-            &copy; Pusat Prestasi Nasional - Kemendikbud - 2021
         </div>
     </footer>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->

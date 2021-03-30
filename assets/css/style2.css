@@ -6,11 +6,61 @@
     text-align: center;
     background-image: linear-gradient(to right, #E78724 , #FBC713);
     padding: 10px 40px 10px 40px;
-    margin:auto;
+    /* margin:auto; */
     margin-bottom: 45px;
     border-radius: 50px;
     border-left: 5px solid #DBC323;
     box-shadow: rgb(192, 192, 192) 5px 5px 10px;
+}
+.title-orange-bold{
+    color: #D78428; 
+    font-weight: bold;    
+}
+.title-black{
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;    
+}
+.title-orange{
+    color: #E78724;
+}
+
+.txt-orange{
+    color: #E78724;
+}
+.txt-span {
+    color: rgb(92, 91, 91);
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+}
+.link-orange{
+    color: #E78724;
+}
+.link-orange:hover{
+    color: #E78724;    
+}
+.link-unduh{
+    display: block;
+    height: fit-content;
+    width:fit-content;
+    padding: 8px 15px;
+    border: 1px solid #E78724;
+    border-radius: 10px;
+    color: #E78724;
+    font-size: 12px;
+    font-weight: 600;
+}
+.link-unduh:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color:#E78724;
+}
+.badge-gray{
+    color:rgb(138, 137, 137);
+}
+.badge-orange{
+    background-color: #D78428;
 }
 
 .nav-link {
@@ -73,8 +123,18 @@
     background-color:#C8B32D;
     color:#fff;
     padding: 7px 50px;
+    font-weight: 500;
 }
 .btn-orange2:hover{
+    color:#fff;
+    background-color:#FBC713;
+}
+.btn-orange3{
+    margin-top: 10px;
+    background-color: #E78724;
+    color:#fff;
+}
+.btn-orange3:hover{
     color:#fff;
     background-color:#FBC713;
 }
@@ -101,6 +161,14 @@
 .bg-header {
     width: 100%;
     background-image: url('/assets/images/bg-header.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.bg-header2 {
+    width: 100%;
+    background-image: url('/assets/images/bg-header2.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -646,10 +714,11 @@
     background-color: #29ABE2;
     color: #fff;
     margin-bottom: 20px;
-    padding: 18px;
+    padding: 3%;
     border-radius: 18px;
     box-shadow: rgb(192, 192, 192) 5px 5px 10px;
     transition: 0.3s;
+    
 }
 
 .pengumuman-card div{
@@ -660,17 +729,18 @@
     padding-right: 20px;
     
 }
-.pengumuman-card div > h2, h4, h5 {      
+.pengumuman-card div h2, h4, h5 {      
     padding: 0;
     margin: 0;
 }
-.pengumuman-card > h4{    
+.pengumuman-card > h4, .pengumuman-card > h5{    
     display:flex;
     align-items: center;  
     padding: 0;
     margin: 0;  
     margin-left: 20px;
 }
+
 
 .pengumuman-card:hover{
     background-color: #E78724;
