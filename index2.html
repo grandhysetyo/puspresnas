@@ -19,6 +19,12 @@
         rel="stylesheet">
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="assets/lib/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/lib/slick-1.8.1/slick/slick-theme.css"/>
+
     <title>Beranda | Puspresnas</title>
     <style>
         
@@ -51,10 +57,13 @@
                             <a href="#" class="nav-link">Profil</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Informasi Lomba</a>
+                            <a href="#" class="nav-link">Ajang Talenta</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Berita</a>
+                            <a href="#" class="nav-link">MTN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Wara - Wara</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">Media</a>
@@ -139,7 +148,7 @@
         <div class="container">
             <div class="row">                
                 <div class="col-md-4 mx-auto">
-                    <h4 class="title-section">Informasi Lomba</h4>
+                    <h4 class="title-section">Ajang Talenta</h4>
                 </div>                                
             </div>
             <div class="row pb-5">
@@ -186,8 +195,8 @@
     <section class="">
         <div class="container">
             <div class="row pt-5">                
-                <div class="col-md-4 mx-auto">
-                    <h4 class="title-section">Layanan Kami</h4>
+                <div class="col-md-5 mx-auto">
+                    <h4 class="title-section">Manajemen Talenta Nasional</h4>
                 </div>                                
             </div>
             <div class="row">
@@ -248,7 +257,7 @@
         <div class="container">
             <div class="row">                
                 <div class="col-md-4 mx-auto">
-                    <h4 class="title-section">Event Terdekat</h4>
+                    <h4 class="title-section">Petualangan Terdekat</h4>
                 </div>                                
             </div>
             <div class="row">
@@ -300,12 +309,11 @@
         </div>
     
 
-    <!-- Berita Terbaru -->
-    
+        <!-- Berita Terbaru -->
         <div class="container">
             <div class="row">                
                 <div class="col-md-4 mx-auto mt-5">
-                    <h4 class="title-section">Berita Terbaru</h4>
+                    <h4 class="title-section">Wara - Wara Prestasi</h4>
                 </div>                                
             </div>
             <div class="row" data-aos="fade-up" data-aos-duration="1000">
@@ -315,7 +323,7 @@
                         <span class="badge badge-pill badge-orange text-white">Pendidikan Tinggi</span> <br>                   
                         <h3 class="mt-2 txt-title-black">Press Release Satria Data 2020</h3>
                         <span class="badge p-0">12 Februari 2021</span>
-                        <p class="text-justify mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <p class="text-justify mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. PageMaker including versions of Lorem Ipsum PageMaker including versions of Lorem [...]</p>
                         <a href="" class="btn btn-orange btn-radius">Selengkapnya <i class="fas fa-chevron-right"></i></a>
                     </div>                    
                 </div>
@@ -348,7 +356,14 @@
                                 <span class="badge badge-pill badge-orange text-white">Jenjang SD</span>
                                 <h6 class="mb-1"><a href="" class="text-dark">Pengumuman Peraih Medali KOSN SD – SMP Tingkat Nasional Tahun 2020 </a></h5>                   
                             </div>
-                        </li>                        
+                        </li>   
+                        <li class="media mt-3">
+                            <img src="assets/images/logo-fl2sn.png" class="align-self-center rounded mr-3 bg-light" alt="" width="40%">
+                            <div class="media-body">
+                                <span class="badge badge-pill badge-orange text-white">Jenjang SD</span>
+                                <h6 class="mb-1"><a href="" class="text-dark">Pengumuman Peraih Medali KOSN SD – SMP Tingkat Nasional Tahun 2020 </a></h5>                   
+                            </div>
+                        </li>                      
                     </ul>                    
                 </div>
             </div>
@@ -361,15 +376,15 @@
     </section>
 
     <!-- Pengumuman -->
-    <section class="">
+    <section>
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mx-auto mt-5">
-                    <h4 class="title-section">Pengumuman</h4>
+                    <h4 class="title-section">Kabar Prestasi</h4>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">                                        
+                <div class="col-md-12 col-lg-6">                                        
                     <a href="" class="pengumuman-card">        
                         <div>
                             <h2>15</h2>
@@ -379,7 +394,7 @@
                         <h4>Pengumuman Panduan Pelaksanaan Lomba LDBI NSDC</h4>                            
                     </a>                    
                 </div>
-                <div class="col-md-6">                                        
+                <div class="col-md-12 col-lg-6">                                        
                     <a href="" class="pengumuman-card">        
                         <div>
                             <h2>08</h2>
@@ -389,7 +404,7 @@
                         <h4>Pengumuman Panduan Pelaksanaan Lomba LDBI NSDC</h4>                            
                     </a>                    
                 </div>
-                <div class="col-md-6">                                        
+                <div class="col-md-12 col-lg-6">                                        
                     <a href="" class="pengumuman-card">        
                         <div>
                             <h2>10</h2>
@@ -399,7 +414,7 @@
                         <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>                            
                     </a>                    
                 </div>
-                <div class="col-md-6">                                        
+                <div class="col-md-12 col-lg-6">                                        
                     <a href="" class="pengumuman-card">        
                         <div>
                             <h2>30</h2>
@@ -423,32 +438,36 @@
             <div class="row">
                 <div class="col-md-8 mx-auto">
                     <div class="vote">
-                        <img src="assets/images/bg-vote.svg" alt="">
-                        <h2>Jajak Pendapat #SobatPrestasi</h2>
-                        <h4>Bagaimana menurutmu informasi yang ditampilkan di website ini?</h4>
-                        <form action="">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="voteInformasi" id="inlineRadio1" value="4">
-                                <label class="form-check-label" for="inlineRadio1">Sangat bermanfaat</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="voteInformasi" id="inlineRadio2" value="3">
-                                <label class="form-check-label" for="inlineRadio2">Bermanfaat</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="voteInformasi" id="inlineRadio2" value="2">
-                                <label class="form-check-label" for="inlineRadio2">Kurang Bermanfaat</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="voteInformasi" id="inlineRadio2" value="1">
-                                <label class="form-check-label" for="inlineRadio2">Tidak Bermanfaat</label>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-orange btn-radius">Kirim</button>                            
-                            </div>
-                        </form>
-                    </div>
-                </div>
+                        <div id="formVote">
+                            <img src="assets/images/bg-vote.svg" alt="">
+                            <h2>Jajak Pendapat #SobatPrestasi</h2>
+                            <h4>Bagaimana menurutmu informasi yang ditampilkan di website ini?</h4>
+                            <!-- <form> -->
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="voteInformasi" id="inlineRadio1" value="4">
+                                    <label class="form-check-label" for="inlineRadio1">Sangat bermanfaat</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="voteInformasi" id="inlineRadio2" value="3">
+                                    <label class="form-check-label" for="inlineRadio2">Bermanfaat</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="voteInformasi" id="inlineRadio2" value="2">
+                                    <label class="form-check-label" for="inlineRadio2">Kurang Bermanfaat</label>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <button class="btn btn-orange btn-radius" onclick="showChart();">Kirim</button>                            
+                                </div>
+                            <!-- </form> -->
+                        </div>
+                        <div class="hasil-vote" id="hasilVote" style="display: none;">
+                            <img src="assets/images/bg-vote.svg" alt="">
+                            <canvas id="voteChart"></canvas>
+                            <h3>Terima Kasih Atas Partisipasi Anda <i class="fas fa-check-circle"></i></h3>
+                        </div>
+                    </div>                                        
+                </div>                
             </div>
         </div>
     </section>
@@ -460,7 +479,7 @@
                     <div class="quotes">
                         <img src="assets/images/qu-pres.svg" alt="">
                         <div class="txt-quotes">
-                            <h1>"Semakin tinggi ilmu seseorang, maka semakin besar rasa toleransinya"</h1>
+                            <h3>"Semakin tinggi ilmu seseorang, maka semakin besar rasa toleransinya"</h3>
                             <hr class="w-25" style="border-color: #fff;">
                             <h5>Abdurahman Wahid (Gus Dur)</h5>
                             <p>Presiden ke-4 Republik Indonesia</p>
@@ -471,10 +490,96 @@
             </div>
         </div>
     </section>
+    <!-- Poster Slider -->
+    <section class="overflow-hidden position-relative">
+		<div class="container">
+			<div class="bg__grub--slider p-3">
+				<div class="row pt-5 pb-5 pl-4">
+					<div class="col-md-5 col-lg-4 pb-5 text-center text-md-left pb-md-0 my-auto">
+                        <div class="card-poster">
+                            <h3 class="mb-3">Poster Prestasi</h3>
+                            <p>Visualisasi ide dalam bentuk gambar oleh #sobatprestasi</p>
+                            <a href="">Lihat lebih banyak</a>
+                        </div>
+						
+
+						<ul class="ul__list--inline slider__arrow">
+							<li class="arrow__left pointer mr-3 position-relative"><i class="fa fa-chevron-left" aria-hidden="true"></i></li>
+							<li class="arrow__right pointer position-relative"><i class="fa fa-chevron-right" aria-hidden="true"></i></li>
+						</ul>
+
+					</div>
+					<div class="col-md-7 col-lg-8 my-auto">
+                        <ul class="ul__list--inline slider__offset">
+                            <li class="pl-3 pr-3 images__slider no__outline">
+                                <img src="assets/poster/1.png" alt="">
+                                <a href="">
+                                    <h3>100 K</h3>
+                                    <p>admin puspresnas</p>
+                                </a>
+                            </li>
+                            <li class="pl-3 pr-3 images__slider no__outline">
+                                <img src="assets/poster/2.png" alt="">
+                                <a href="">
+                                    <h3>100 K</h3>
+                                    <p>admin puspresnas</p>
+                                </a>
+                            </li>
+                            <li class="pl-3 pr-3 images__slider no__outline">
+                                <img src="assets/poster/3.jpg" alt="">
+                                <a href="">
+                                    <h3>100 K</h3>
+                                    <p>admin puspresnas</p>
+                                </a>
+                            </li>
+                            <li class="pl-3 pr-3 images__slider no__outline">
+                                <img src="assets/poster/4.jpg" alt="">
+                                <a href="">
+                                    <h3>100 K</h3>
+                                    <p>admin puspresnas</p>
+                                </a>
+                            </li>
+                        </ul>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
     <!-- Video -->
-    <section >
-          
-    </section>
+    <section>
+		<div class="container">
+            <div class="row">
+                <div class="col-md-4 mx-auto mt-5">
+                    <h4 class="title-section">Sinema Prestasi</h4>
+                </div>
+            </div>
+			<div class="row">
+                <div class="col-md-12">
+                    <div class="video-slider">
+                        <div class="card-slider">
+                            <div class="embed-responsive embed-responsive-16by9">                                
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/P1-ne5xkC3g?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>                            
+                            <a href="#" class="shadow-sm"><h4>Lorem ipsum dolor sit amet lor idul</h4></a>
+                        </div>
+                        <div class="card-slider">
+                            <div class="embed-responsive embed-responsive-16by9">                                
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/P1-ne5xkC3g?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div> 
+                            <a href="#" class="shadow-sm"><h4>Lorem ipsum dolor sit amet lor idul</h4></a>
+                        </div>
+                        <div class="card-slider">
+                            <div class="embed-responsive embed-responsive-16by9">                                
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/P1-ne5xkC3g?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div> 
+                            <a href="#" class="shadow-sm"><h4>Lorem ipsum dolor sit amet lor idul</h4></a>
+                        </div>
+                    </div>
+                </div>
+            </div>		
+		</div>
+	</section>
     <!-- Galeri -->
     <section>
         <div class="container">
@@ -484,33 +589,81 @@
                 </div> 
             </div>            
             <div class="row">
-                <div class="col-md-3">
-                    <div class="row">
-                        <div class="col">
-                            <img src="assets/galeri/1.jpeg" class="img-fluid rounded rounded-lg mb-3" alt="">
-                        </div>                        
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <img src="assets/galeri/9.jpeg" class="img-fluid rounded rounded-lg" alt="">
+                <div class="col-md-12 col-lg-4">
+                    <div class="gallery-grid">
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/galeri/1.jpeg" class="image img-fluid rounded rounded-lg mb-3" alt="">
+                            </div>                        
                         </div>
-                    </div>                    
-                </div>
-                <div class="col-md-6">
-                    <img src="assets/galeri/9.jpeg" class="img-fluid rounded rounded-lg mb-3" alt="">
-                </div>
-                <div class="col-md-3">
-                    <div class="row">
-                        <div class="col">
-                            <img src="assets/galeri/1.jpeg" class="img-fluid rounded rounded-lg mb-3" alt="">
-                        </div>                        
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/galeri/9.jpeg" class="image img-fluid rounded rounded-lg" alt="">
+                            </div>
+                            <div class="col">
+                                <img src="assets/galeri/8.jpeg" class="image img-fluid rounded rounded-lg" alt="">
+                            </div>
+                            <div class="col">
+                                <img src="assets/galeri/10.jpeg" class="image img-fluid rounded rounded-lg" alt="">
+                            </div>
+                        </div>  
+                        <div class="card-album">
+                            <h3>Kompetisi Olahraga siswa Nasional</h3>
+                            <span><i class="fas fa-calendar-alt"></i> Minggu, 20 - Februari 2021</span>
+                            <a href="#">Detail</a>
+                        </div>                  
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <img src="assets/galeri/9.jpeg" class="img-fluid rounded rounded-lg" alt="">
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="gallery-grid">
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/galeri/1.jpeg" class="image img-fluid rounded rounded-lg mb-3" alt="">
+                            </div>                        
                         </div>
-                    </div>                    
-                </div>  
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/galeri/9.jpeg" class="image img-fluid rounded rounded-lg" alt="">
+                            </div>
+                            <div class="col">
+                                <img src="assets/galeri/8.jpeg" class="image img-fluid rounded rounded-lg" alt="">
+                            </div>
+                            <div class="col">
+                                <img src="assets/galeri/10.jpeg" class="image img-fluid rounded rounded-lg" alt="">
+                            </div>
+                        </div>
+                        <div class="card-album">
+                            <h3>Kompetisi Olahraga siswa Nasional</h3>
+                            <span><i class="fas fa-calendar-alt"></i> Minggu, 20 - Februari 2021</span>
+                            <a href="#">Detail</a>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="gallery-grid">
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/galeri/1.jpeg" class="image img-fluid rounded rounded-lg mb-3" alt="">
+                            </div>                        
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/galeri/9.jpeg" class="image img-fluid rounded rounded-lg" alt="">
+                            </div>
+                            <div class="col">
+                                <img src="assets/galeri/8.jpeg" class="image img-fluid rounded rounded-lg" alt="">
+                            </div>
+                            <div class="col">
+                                <img src="assets/galeri/10.jpeg" class="image img-fluid rounded rounded-lg" alt="">
+                            </div>
+                        </div>
+                        <div class="card-album">
+                            <h3>Kompetisi Olahraga siswa Nasional</h3>
+                            <span><i class="fas fa-calendar-alt"></i> Minggu, 20 - Februari 2021</span>
+                            <a href="#">Detail</a>
+                        </div>                    
+                    </div>
+                </div>
                 <div class="col">
                     <a class="btn-orange2 btn-radius float-right" href="#">Lebih Banyak</a>
                 </div>              
@@ -550,20 +703,45 @@
             </div>
         </div>
     </section>
+    <!-- Sosmed -->
     <section>
         <div class="container">
-            <div class="row mt-5 pengunjung">
+            <div class="row">
+                <div class="col-md-4 mx-auto">
+                    <div class="sosmed">
+                        <h4>Ikuti Kami di Media Sosial:</h4>
+                        <ul>
+                            <li class="fb"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="ig"><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <li class="yt"><a href=""><i class="fab fa-youtube"></i></a></li>
+                            <li class="tw"><a href=""><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pengunjung -->
+    <section>
+        <div class="container">
+            <div class="row mt-5">
                 <div class="col-md-3 mx-auto">
-                    <h2>13.541</h2>
-                    <p>Pengunjung hari ini</p>
+                    <div class="pengunjung">
+                        <h1>13.541</h1>
+                        <p>Pengunjung hari ini</p>
+                    </div>                    
                 </div>
                 <div class="col-md-3 mx-auto">
-                    <h2>13.541</h2>
-                    <p>Pengunjung minggu ini</p>
+                    <div class="pengunjung">
+                        <h1>13.541</h1>
+                        <p>Pengunjung hari ini</p>
+                    </div> 
                 </div>
                 <div class="col-md-3 mx-auto">
-                    <h2>13.541</h2>
-                    <p>Pengunjung bulan ini</p>
+                    <div class="pengunjung">
+                        <h1>13.541</h1>
+                        <p>Pengunjung hari ini</p>
+                    </div> 
                 </div>
             </div>
         </div>
@@ -587,14 +765,7 @@
                     <div class="kontak">
                         <span><i class="fas fa-phone"></i></span>
                         <p>021-5731177</p>  
-                    </div>
-                                      
-                    <ul class="sosmed">
-                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                        <li><a href=""><i class="fab fa-youtube"></i></a></li>
-                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                    </ul>
+                    </div>                                                          
                 </div>
             </div>
         </div>
@@ -606,8 +777,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+    <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+    <!-- Slick -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
     <script>
         AOS.init();
         $('#slider-header').carousel({
@@ -674,7 +848,127 @@
                     next.children(':first-child').clone().appendTo($(this));
                 }
             });
-        });                           
+        }); 
+        var randomScalingFactor = function() {
+			return Math.round(Math.random() * 100);
+		};
+
+		var config = {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor()						
+					],
+					backgroundColor: [
+						'#eeb76b',
+						'#e2703a',
+						'#9c3d54'						
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'Sangat Bermanfaat',
+					'Bermanfaat',
+					'Kurang Bermanfaat'
+				]
+			},
+			options: {
+				responsive: true
+			}
+		};
+
+		window.onload = function() {
+			var ctx = document.getElementById('voteChart').getContext('2d');
+			window.myPie = new Chart(ctx, config);
+		};  
+        
+        function showChart(){
+            var formVote = document.getElementById("formVote");
+            var hasilVote = document.getElementById("hasilVote");
+            if(formVote.style.display == 'none'){                
+                formVote.style.display = 'block';
+                hasilVote.style.display = 'none';
+            }else{                
+                hasilVote.style.display = 'block';
+                formVote.style.display = 'none';
+            }
+        }
+
+        $('.slider__offset').slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			arrows: true,
+			prevArrow: $(".arrow__left"),
+			nextArrow: $(".arrow__right"),
+			fade: false,
+			infinite: true,
+			autoplay: true,
+			pauseOnHover:true,
+			focusOnSelect: true,
+			centerPadding: 0,
+			slideMargin: 10,
+			centerPadding: 0,
+			responsive: [
+			{
+				breakpoint: 1140,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 577,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+			}
+			]
+		});   
+        $('.video-slider').slick({
+            centerMode: true,
+            centerPadding: '270px',
+            slidesToShow:1,
+            responsive: [
+                {
+                    breakpoint: 991,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '0px',
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '0px',
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '0px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });     
     </script>
 </body>
 

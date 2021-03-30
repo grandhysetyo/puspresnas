@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="assets/images/kemendikbud.png" type="image/x-icon">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1e6b6f692c.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style2.css"> 
+    <!-- Font Opensans -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
+    <link rel="stylesheet" type="text/css" href="assets/lib/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/lib/slick-1.8.1/slick/slick-theme.css"/>
+    
+    <title>Beranda | Puspresnas</title>
+    <style>
+        .video-slider{
+            width: 100%;            
+        }
+        .video-slider iframe{
+            width: 550px;
+            height: 300px;
+        }
+        .card-slider a{
+            display: block;
+            width: 80%;
+            text-align: center;            
+            margin: auto;
+            margin-bottom: 20px;
+            padding: 30px;
+            background-color: #ffffff;
+            color: #E78724;
+            border-radius: 18px;
+        }
+        .card-slider.slick-slide{
+            opacity: 0.3;
+        }
+        .slick-current.slick-active.slick-center{
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+	<section>
+		<div class="container">
+			<div class="row">
+                <div class="col-md-12">
+                    <div class="video-slider">
+                        <div class="card-slider">
+                            <iframe src="https://www.youtube.com/embed/P1-ne5xkC3g?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <a href="#"><h4>Lorem ipsum dolor sit amet lor idul</h4></a>
+                        </div>
+                        <div class="card-slider">
+                            <iframe src="https://www.youtube.com/embed/P1-ne5xkC3g?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <a href="#"><h4>Lorem ipsum dolor sit amet lor idul</h4></a>
+                        </div>
+                        <div class="card-slider">
+                            <iframe src="https://www.youtube.com/embed/P1-ne5xkC3g?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <a href="#"><h4>Lorem ipsum dolor sit amet lor idul</h4></a>
+                        </div>
+                    </div>
+                </div>
+            </div>		
+		</div>
+	</section>
+    <footer class="bg-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.svg" alt="" width="100%">
+                        <h5>Pusat Prestasi Nasional</h5>
+                        <p>Sekretariat Jendral <br> Kementrian Pendidikan dan Kebudayaan</p>
+                    </div>
+                </div>
+                <div class="col-md-5 offset-md-3">
+                    <h3 class="text-white">Kontak Kami</h3>
+                    <div class="kontak">
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <p>Komplek Kementrian Pendidikan dan Kebudayaan, Gedung C, Lantai 19 Jl. Jendral Sudirman,
+                            Senayan, Jakarta - 10270</p>
+                    </div>
+                    <div class="kontak">
+                        <span><i class="fas fa-phone"></i></span>
+                        <p>021-5731177</p>
+                    </div>
+
+                    <ul class="sosmed">
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->        
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+<script>
+    $('.video-slider').slick({
+        centerMode: true,
+        centerPadding: '270px',
+        slidesToShow:1,
+        responsive: [
+            {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+            }
+        ]
+        });
+    </script>
+</html>
