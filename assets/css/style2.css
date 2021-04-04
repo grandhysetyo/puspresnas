@@ -826,8 +826,8 @@
       text-align: center;
   }
   .hasil-vote canvas{
-      width: 80% !important;
-      height: 80% !important;
+      width: 90% !important;
+      height: 90% !important;
       margin: auto;
   }
   .hasil-vote h3{
@@ -1091,17 +1091,18 @@
 }
 .sosmed ul{
     list-style: none;
-    display: flex;  
-    margin: 2% 10%;   
+    display: flex;      
     padding: 0;
+    margin: 10%;
 }
 .sosmed li{
     margin: 5px;    
     border: 1px solid #fff;
     border-radius: 50%;
-    padding: 6% 2%;
+    padding: 16px 20px;
     width: 60px;
     height: 60px;
+    margin: auto;
 }
 .sosmed li a{
     color: #FFFFFF;
@@ -1176,6 +1177,9 @@
     .card-slider a h4{
         font-size: 18px;
     }
+    .pengunjung{
+        width: fit-content;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -1221,6 +1225,9 @@
     .card-slider a h4{
         font-size: 18px;
     }
+    .pengunjung{
+        width: fit-content;
+    }
 }
 
  /* Medium devices (tablets, 768px and up) */
@@ -1239,7 +1246,9 @@
     .vote{
         margin-top: 140px;
     }
-    
+    .pengunjung{
+        width: fit-content;
+    }
     
 }
 
