@@ -17,7 +17,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <title>SMA | Puspresnas</title>
+    <style>
+        .breadcrumb-item a{
+            color: #D78428;
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            }
+
+            .swiper-slide {
+            background-size: cover;
+            background-position: center;
+            }
+
+            .gallery-top {
+                /* height: 80%; */
+                width: 100%;
+            }
+
+            .gallery-thumbs {
+            height: 20%;
+            box-sizing: border-box;
+            padding: 10px 0;
+            }
+
+            .gallery-thumbs .swiper-slide {
+            height: 100%;
+            opacity: 0.4;
+            }
+
+            .gallery-thumbs .swiper-slide-thumb-active {
+            opacity: 1;
+            }
+    </style>
     
 </head>
 
@@ -75,19 +116,54 @@
     </header>
     
     <!-- Content -->
-    <div class="container mt-5 mb-2">
+    <div class="container my-5">        
         <div class="row">
-            <div class="col-md-7 mx-auto ">
-                <h4 class="title-orange-bold">Pengumuman Panduan Pelaksanaan Lomba LDBI NSDC</h4>
-                <span class="badge badge-pill badge-orange text-white">Jenjang SMA</span>
+            <div class="col-md-11 mx-auto">
+                <nav aria-label="breadcrumb" class="">
+                    <ol class="breadcrumb bg-transparent txt-link-orange2">
+                      <li class="breadcrumb-item "><a href="#">Beranda</a></li>
+                      <li class="breadcrumb-item"><a href="#">Album</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Detail Album</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="col-md-10 mx-auto">
+                <h4 class="title-orange-bold mb-3">Album Pencak Silat SMA</h4>
+                <span class="badge badge-pill badge-orange text-white">Jenajang SMA</span>
                 <span class="txt-span">| 12 Februari 2021</span>
-                <p class="txt-title-orange mt-4">Lorem ipsum</p>
-                <p class="txt-p text-justify mt-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-                <p class="txt-p text-justify mt-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-                <p class="txt-p text-justify mt-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                <div class="swiper-container gallery-top mt-3">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide" style="background-image:url(assets/galeri/1.jpeg)"></div>
+                      <div class="swiper-slide" style="background-image:url(assets/galeri/2.jpeg)"></div>
+                      <div class="swiper-slide" style="background-image:url(assets/galeri/3.jpeg)"></div>
+                      <div class="swiper-slide" style="background-image:url(assets/galeri/4.jpeg)"></div>
+                      <div class="swiper-slide" style="background-image:url(assets/galeri/5.jpeg)"></div>
+                      <div class="swiper-slide" style="background-image:url(assets/galeri/6.jpeg)"></div>
+                      <div class="swiper-slide" style="background-image:url(assets/galeri/7.jpeg)"></div>
+                      <div class="swiper-slide" style="background-image:url(assets/galeri/8.jpeg)"></div>
+                      <div class="swiper-slide" style="background-image:url(assets/galeri/9.jpeg)"></div>
+                      <div class="swiper-slide" style="background-image:url(assets/galeri/10.jpeg)"></div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                  </div>
+                  <div class="swiper-container gallery-thumbs mb-5">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(assets/galeri/1.jpeg)"></div>
+                        <div class="swiper-slide" style="background-image:url(assets/galeri/2.jpeg)"></div>
+                        <div class="swiper-slide" style="background-image:url(assets/galeri/3.jpeg)"></div>
+                        <div class="swiper-slide" style="background-image:url(assets/galeri/4.jpeg)"></div>
+                        <div class="swiper-slide" style="background-image:url(assets/galeri/5.jpeg)"></div>
+                        <div class="swiper-slide" style="background-image:url(assets/galeri/6.jpeg)"></div>
+                        <div class="swiper-slide" style="background-image:url(assets/galeri/7.jpeg)"></div>
+                        <div class="swiper-slide" style="background-image:url(assets/galeri/8.jpeg)"></div>
+                        <div class="swiper-slide" style="background-image:url(assets/galeri/9.jpeg)"></div>
+                        <div class="swiper-slide" style="background-image:url(assets/galeri/10.jpeg)"></div>
+                    </div>
+                  </div>
             </div>
         </div>
-        
     </div>
     <footer class="bg-footer">
         <div class="container">
@@ -121,9 +197,31 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
-        AOS.init();        
+        AOS.init();  
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        loop: true,
+        freeMode: true,
+        loopedSlides: 5, //looped slides should be the same
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        });
+        var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 10,
+        loop: true,
+        loopedSlides: 5, //looped slides should be the same
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        thumbs: {
+            swiper: galleryThumbs,
+        },
+        });      
     </script>
 </body>
 
