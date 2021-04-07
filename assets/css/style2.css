@@ -753,13 +753,16 @@
     margin-left: 20px;
 }
 
-
 .pengumuman-card:hover{
     background-color: #E78724;
     text-decoration: none;
     color: #fff;
 }
-
+.pengumuman-card.disabled{
+    background-color: #b9b8b8;
+    box-shadow: none;
+    border-radius: 12px;
+}
 /* Vote */
 .vote{
     margin-top: 200px;
