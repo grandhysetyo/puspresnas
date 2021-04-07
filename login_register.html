@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="assets/images/kemendikbud.png" type="image/x-icon">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1e6b6f692c.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <!-- Font Opensans -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="assets/lib/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/lib/slick-1.8.1/slick/slick-theme.css"/>
+
+    <title>Beranda | Puspresnas</title>
+    <style>
+        html, body, section {
+            height: 100%;
+        }
+
+        .card-form{
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 18px;
+        }
+        #logresTabbed .nav-item{
+            margin: auto;
+        }
+        #logresTabbed .nav-link {
+            border: unset;
+            margin-bottom: 0;
+        }
+        #logresTabbed .nav-link.active {            
+            color: #E78724 !important;
+            font-weight: bold;
+            font-size: 18px;
+            border-bottom: 1px solid #E78724;
+        }
+        #logresTabbed .nav-link{
+            color: #E78724;
+        }
+        .tab-content{
+            padding: 20px;
+        }
+        .hero-logres{
+            width: 80%;
+            margin: auto;
+        }
+        @media (max-width: 575.98px) {
+            .hero-logres{
+                width: 140px;        
+                position: relative;
+                bottom: -30px;
+                left: 30%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="bg-header">   
+        <nav class="navbar navbar-expand-lg navbar-custom" id="custom-nav">
+            <div class="container">
+                <div class="d-flex flex-grow-1">
+                    <!-- <span class="w-100 d-lg-none d-block">
+                         hidden spacer to center brand on mobile 
+                    </span> -->
+                    <a class="navbar-brand" href="#">                        
+                        <img src="assets/images/logo.svg" alt="" width="220px">
+                    </a>
+                    <div class="w-100 text-right">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
+                    <ul class="navbar-nav ml-auto flex-nowrap">                                                
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Kembali</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>     
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <img src="assets/images/hero-burung.svg" alt="maskot burung" class="hero-logres" >
+                </div>
+                <div class="col-md-5">
+                    <div class="card-form">
+                        <ul class="nav justify-content-center" id="logresTabbed" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Login</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">Register</a>
+                            </li>                            
+                          </ul>
+                          <div class="tab-content" id="log_res_content">
+                            <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                                <form method="POST" action="">
+                                    <div class="form-group">
+                                      <label for="email">Email address</label>
+                                      <input type="email" class="form-control" placeholder="example_email@gmail.com">
+                                      <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="password">Password</label>
+                                      <input type="password" class="form-control" id="password" >
+                                    </div>
+                                    <div class="form-group form-check">
+                                      <input type="checkbox" class="form-check-input" id="rememberme">
+                                      <label class="form-check-label" for="rememberme">Ingat Saya</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-orange btn-block">Login</button>
+                                  </form>
+                            </div>
+                            <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                                <form method="POST" action="">
+                                    <div class="form-group">
+                                      <label for="email">Email address</label>
+                                      <input type="email" class="form-control" placeholder="example_email@gmail.com">
+                                      <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Nama Lengkap</label>
+                                        <input type="email" class="form-control" placeholder="Grandhys Setyo Utomo">
+                                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="password">Password</label>
+                                      <input type="password" class="form-control" id="password">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">Ulangi Password</label>
+                                        <input type="password" class="form-control" id="password">
+                                      </div>                                    
+                                    <button type="submit" class="btn btn-orange btn-block">Submit</button>
+                                  </form>
+                            </div>                            
+                          </div>
+                    </div>                                      
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Slick -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+</html>

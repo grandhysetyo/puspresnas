@@ -6,7 +6,7 @@
     text-align: center;
     background-image: linear-gradient(to right, #E78724 , #FBC713);
     padding: 10px 40px 10px 40px;
-    /* margin:auto; */
+    margin: auto;
     margin-bottom: 45px;
     border-radius: 50px;
     border-left: 5px solid #DBC323;
@@ -63,7 +63,7 @@
     background-color: #D78428;
 }
 
-.nav-link {
+#custom-nav .nav-link {
     font-size: 14px;
     color: #fff;
     font-weight: 500;
@@ -74,35 +74,35 @@
     margin-right: 5px;
     border-radius: 15px;
 }
-.nav-link:hover{
+#custom-nav .nav-link:hover{
     color: #F47735;
     background-color: #fff;
 }
-.nav-link:active{
+#custom-nav .nav-link:active{
     color: #F47735;
     background-color: #fff;
 }
-.nav-link.active{
+#custom-nav .nav-link.active{
     color: #F47735;
     background-color: #fff;
 }
-.nav-link.masuk{
+#custom-nav .nav-link.masuk{
     color: #F47735;
     background-color: #fff;
     padding-right: 20px !important;
     padding-left: 20px !important;
 }
-.navbar-brand img{
+#custom-nav .navbar-brand img{
     margin-right: 8px;
 }
-.navbar-brand{
+#custom-nav .navbar-brand{
     color: #fff;
 }
-.navbar-custom .navbar-toggler{
+#custom-nav .navbar-custom .navbar-toggler{
     color: #fff !important;
     border-color: #fff !important;
 }
-.navbar-toggler-icon{
+#custom-nav .navbar-toggler-icon{
     color: #fff;
 }
 .btn-orange-slider{
