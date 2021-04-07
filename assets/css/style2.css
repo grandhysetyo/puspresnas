@@ -751,6 +751,7 @@
     padding: 0;
     margin: 0;  
     margin-left: 20px;
+    text-align: left;
 }
 
 .pengumuman-card:hover{
