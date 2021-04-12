@@ -946,11 +946,30 @@
     width: 550px;
     height: 300px;
 }
-.card-slider a{
+.link-yt{
+    position: relative;
+    display: block;
+}
+.icon-yt{    
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    display: block;
+    font-size: 45px;
+    color: #CC1D2D;
+}
+.link-yt:hover .icon-yt{
+    color: #bbbbbb;
+}
+.link-yt img{
+    margin: auto;
+}
+.card-slider .caption{
     display: block;
     width: 80%;
     text-align: center;            
     margin: auto;
+    margin-top: 20px;
     margin-bottom: 20px;
     padding: 30px;
     background-color: #ffffff;
