@@ -6,6 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/1e6b6f692c.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
@@ -18,56 +19,73 @@
         rel="stylesheet">
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="assets/lib/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/lib/slick-1.8.1/slick/slick-theme.css"/>
+
     <title>Beranda | Puspresnas</title>
-    
+    <style>
+        
+    </style>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg bg-white">
-        <div class="container">
-            <div class="d-flex flex-grow-1">
-                <span class="w-100 d-lg-none d-block">
-                    <!-- hidden spacer to center brand on mobile -->
-                </span>
-                <a class="navbar-brand" href="#">
-                    <img src="assets/images/kemendikbud.png" alt="" width="50px"> |
-                    <img src="assets/images/logo.png" alt="" width="100px">
-                </a>
-                <div class="w-100 text-right">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+<body>    
+    <header class="bg-header">
+        <nav class="navbar navbar-expand-lg navbar-custom" id="custom-nav">
+            <div class="container">
+                <div class="d-flex flex-grow-1">
+                    <!-- <span class="w-100 d-lg-none d-block">
+                         hidden spacer to center brand on mobile 
+                    </span> -->
+                    <a class="navbar-brand" href="#">                        
+                        <img src="assets/images/logo.svg" alt="" width="220px">
+                    </a>
+                    <div class="w-100 text-right">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
+                    <ul class="navbar-nav ml-auto flex-nowrap">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Profil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Ajang Talenta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">MTN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Wara - Wara</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">ZIWBK</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Kontak Kami</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="#" class="nav-link masuk">Masuk</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
-                <ul class="navbar-nav ml-auto flex-nowrap">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active">Beranda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Informasi Lomba</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Berita</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Galeri</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Kontak Kami</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <header class="bg-header" style="background-color: black; height: 100%;">
-        <div class="container">
-            <div class="row my-auto">
-                <div class="col p-4 ">
-                    <div id="sliderHeader" class="carousel slide carousel-fade" data-ride="carousel">
+        </nav>
+        <div class="container">            
+            <div class="row">
+                <div class="col p-4">
+                    <div id="slider-header" class="carousel slide carousel-fade" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="mask flex-center">
@@ -75,78 +93,684 @@
                                         <div class="row align-items-center">
                                             <div class="col-md-7 col-12 order-md-1 order-2">
                                                 <h4>Pusat Prestasi Nasional</h4>
-                                                <p class="gold">Melejitkan Talenta Indonesia</p>
-                                                <p>Lorem ipsum dolor sit amet. Reprehenderit, qui blanditiis quidem
-                                                    rerum <br>
-                                                    necessitatibus praesentium voluptatum deleniti atque corrupti.</p>                                                
+                                                <h5>Melejitkan Talenta Indonesia</h5>
+                                                <h3>"Lorem ipsum dolor sit amet. Reprehenderit, qui blanditiis quidem
+                                                    rerum"</h3>                                                
                                             </div>
                                             <div class="col-md-5 col-12 order-md-2 order-1">
-                                                <img src="assets/images/exams.svg" alt="slide">
-                                            </div>
+                                                <img src="assets/images/banner2.png" alt="slide">
+                                            </div>                                            
                                         </div>
+                                        
                                     </div>
                                 </div>
-                            </div>
+                            </div>     
                             <div class="carousel-item">
                                 <div class="mask flex-center">
                                     <div class="container">
                                         <div class="row align-items-center">
                                             <div class="col-md-7 col-12 order-md-1 order-2">
                                                 <h4>Pusat Prestasi Nasional</h4>
-                                                <span class="text-warning">Melejitkan Talenta Indonesia</span>
-                                                <p>Lorem ipsum dolor sit amet. Reprehenderit, qui blanditiis quidem
-                                                    rerum <br>
-                                                    necessitatibus praesentium voluptatum deleniti atque corrupti.</p>                                                
+                                                <h5>Melejitkan Talenta Indonesia</h5>
+                                                <h3>"Lorem ipsum dolor sit amet. Reprehenderit, qui blanditiis quidem
+                                                    rerum"</h3>                                                
                                             </div>
                                             <div class="col-md-5 col-12 order-md-2 order-1">
-                                                <img src="assets/images/logo-kopsi.jpg" class="" alt="slide">
-                                            </div>
+                                                <img src="assets/images/banner2.png" alt="slide">
+                                            </div>                                            
                                         </div>
+                                        
                                     </div>
                                 </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="mask flex-center">
-                                    <div class="container">
-                                        <div class="row align-items-center">
-                                            <div class="col-md-7 col-12 order-md-1 order-2 ">
-                                                <h4>Pusat Prestasi Nasional</h4>
-                                                <span class="text-warning">Melejitkan Talenta Indonesia</span>
-                                                <p>Lorem ipsum dolor sit amet. Reprehenderit, qui blanditiis quidem
-                                                    rerum <br>
-                                                    necessitatibus praesentium voluptatum deleniti atque corrupti.</p>
-                                                <!-- <a href="#">BUY NOW</a>  -->
-                                            </div>
-                                            <div class="col-md-5 col-12 order-md-2 order-1">
-                                                <img src="assets/images/logo-kopsi.jpg" class="mx-auto" alt="slide">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </div>                                                   
                         </div>
+                        
                         <ol class="carousel-indicators">
-                            <li data-target="#sliderHeader" data-slide-to="0" class="active"></li>
-                            <li data-target="#sliderHeader" data-slide-to="1"></li>
-                            <li data-target="#sliderHeader" data-slide-to="2"></li>
+                            <li data-target="#slider-header" data-slide-to="0" class="active"></li>
+                            <li data-target="#slider-header" data-slide-to="1"></li>
+                            <li data-target="#slider-header" data-slide-to="2"></li>
                         </ol>
-                       
+                        <!-- <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev"> <span
+                                class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+                                class="sr-only">Previous</span> </a>
+                        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next"> <span
+                                class="carousel-control-next-icon" aria-hidden="true"></span> <span
+                                class="sr-only">Next</span> </a> -->
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
-    <section>
+    <!-- Jenjang -->
+    <section class="bg-blue-grad">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 my-auto">
-                    <div class="shape-title"></div>
-                    <h3 class="title-orange">Informasi Lomba</h3>
+            <div class="row">                
+                <div class="col-md-5 col-lg-4 mx-auto">
+                    <h4 class="title-section mx-auto">Ajang Talenta</h4>
+                </div>                                
+            </div>
+            <div class="row pb-5">
+                <div class="col-lg-2 col-md-4 col-sm-6 ">
+                    <a class="menu-jenjang menu-sd" href="#">
+                        <img src="assets/images/menu-sd.svg" alt="">                        
+                        <h3>SD</h3>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a class="menu-jenjang menu-diskus" href="#">
+                        <img src="assets/images/menu-diskus.svg" alt="">                        
+                        <h3>DISKUS</h3>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a class="menu-jenjang menu-smp" href="#">
+                        <img src="assets/images/menu-smp.svg" alt="">                        
+                        <h3>SMP</h3>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a class="menu-jenjang menu-sma" href="#">
+                        <img src="assets/images/menu-sma.svg" alt="">                        
+                        <h3>SMA</h3>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a class="menu-jenjang menu-smk" href="#">
+                        <img src="assets/images/menu-smk.svg" alt="">                        
+                        <h3>SMK</h3>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a class="menu-jenjang menu-dikti" href="#">
+                        <img src="assets/images/menu-dikti.svg" alt="">                        
+                        <h3>DIKTI</h3>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Layanan Kami -->
+    <section class="">
+        <div class="container">
+            <div class="row pt-5">                
+                <div class="col-md-6 col-lg-5 mx-auto">
+                    <h4 class="title-section mx-auto">Manajemen Talenta Nasional</h4>
+                </div>                                
+            </div>
+            <div class="row">
+                <div id="slider-layanan" class="carousel slide w-100" data-ride="carousel">
+                    <div class="carousel-inner w-100" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="card shadow-sm">
+                                    <img class="icon-layanan" src="assets/images/digitalcv-icon.svg">
+                                    <div class="card-body">                                                                                        
+                                        <h3>E-Sertifikat</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum, assumenda accusantium ullam</p>
+                                        <a href="#" class="card-link">Kunjungi</a>
+                                    </div>                                                                              
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="card shadow-sm">
+                                    <img class="icon-layanan" src="assets/images/e-sertifitakat-icon.svg">
+                                    <div class="card-body">                                                                                        
+                                        <h3>E-Sertifikat</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum, assumenda accusantium ullam</p>
+                                        <a href="#" class="card-link">Kunjungi</a>
+                                    </div>                                                                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="card shadow-sm">
+                                    <img class="icon-layanan" src="assets/images/digitalcv-icon.svg">
+                                    <div class="card-body">                                                                                        
+                                        <h3>E-Sertifikat</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum, assumenda accusantium ullam</p>
+                                        <a href="#" class="card-link">Kunjungi</a>
+                                    </div>                                                                             
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#slider-layanan" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#slider-layanan" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Terdekat -->
+    <section class="bg-orange-grad">
+        <div class="container">
+            <div class="row">                
+                <div class="col-md-6 col-lg-4 mx-auto">
+                    <h4 class="title-section mx-auto">Petualangan Terdekat</h4>
+                </div>                                
+            </div>
+            <div class="row">
+                <div class="col-md-2 d-md-block d-none">
+                    <img src="assets/images/event-hero-default.svg" class="event-hero" alt="">
+                </div>
+                <div class="col-md-9">
+                    <div class="bg-event">
+                        <div id="slider-event" class="carousel slide w-100" data-ride="carousel">
+                            <div class="carousel-inner w-100" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="card">
+                                            <img class="img-event" src="assets/images/logo-fl2sn.png">                                                                                                                                                                     
+                                            <a href="#" class="card-link">Kunjungi</a>                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="card">
+                                            <img class="img-event" src="assets/images/logo-ldbi.jpg">                                        
+                                            <a href="#" class="card-link">Kunjungi</a>                                                                     
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="card">
+                                            <img class="img-event" src="assets/images/logo-kopsi.jpg">                                                                                                                                                                            
+                                            <a href="#" class="card-link">Kunjungi</a>                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#slider-event" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#slider-event" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>                        
+                    </div>
+                </div>                
+            </div>    
+                                    
+        </div>
+    
+
+        <!-- Berita Terbaru -->
+        <div class="container">
+            <div class="row">                
+                <div class="col-md-5 col-lg-3 mx-auto mt-5">
+                    <h4 class="title-section">Wara - Wara Prestasi</h4>
+                </div>                                
+            </div>
+            <div class="row" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-md-7 ">
+                    <div class="berita-terbaru">
+                        <img src="assets/images/berita-img.png" alt="" class="align-self-center img-fluid rounded mb-3" width="100%">
+                        <span class="badge badge-pill badge-orange text-white">Pendidikan Tinggi</span> <br>                   
+                        <h3 class="mt-2 txt-title-black">Press Release Satria Data 2020</h3>
+                        <span class="badge p-0">12 Februari 2021</span>
+                        <p class="text-justify mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. PageMaker including versions of Lorem Ipsum PageMaker including versions of Lorem [...]</p>
+                        <a href="" class="btn btn-orange btn-radius">Selengkapnya <i class="fas fa-chevron-right"></i></a>
+                    </div>                    
+                </div>
+                <div class="col-md-5 mx-auto">
+                    <ul class="list-unstyled">
+                        <li class="media">
+                          <img src="assets/images/berita-img.png" class="align-self-center rounded mr-3 bg-light" alt="" width="40%">
+                          <div class="media-body">
+                                <span class="badge badge-pill badge-orange text-white">Jenjang SMP</span>
+                                <h6 class="mb-1"><a href="" class="text-dark">SK Peringkat 10 Besar Provinsi Pada Lomba KOSN SD-SMP Tahun 2020  </a></h5>                              
+                          </div>
+                        </li>
+                        <li class="media mt-3">
+                            <img src="assets/images/logo-kopsi.jpg" class="align-self-center rounded mr-3 bg-light" alt="" width="40%">
+                            <div class="media-body">
+                                <span class="badge badge-pill badge-orange text-white">Jenjang SMA</span>
+                                <h6 class="mb-1"><a href="" class="text-dark">Pengumuman Peraih Medali KOSN SD – SMP Tingkat Nasional Tahun 2020 </a></h5>                            
+                            </div>
+                        </li>                       
+                        <li class="media mt-3">
+                            <img src="assets/images/logo-ldbi.jpg" class="align-self-center rounded mr-3 bg-light" alt="" width="40%">
+                            <div class="media-body">
+                                <span class="badge badge-pill badge-orange text-white">Jenjang SMP</span>
+                                <h6 class="mb-1"><a href="" class="text-dark">Pengumuman Peraih Medali KOSN SD – SMP Tingkat Nasional Tahun 2020 </a></h5>                            
+                            </div>
+                        </li>
+                        <li class="media mt-3">
+                            <img src="assets/images/logo-fl2sn.png" class="align-self-center rounded mr-3 bg-light" alt="" width="40%">
+                            <div class="media-body">
+                                <span class="badge badge-pill badge-orange text-white">Jenjang SD</span>
+                                <h6 class="mb-1"><a href="" class="text-dark">Pengumuman Peraih Medali KOSN SD – SMP Tingkat Nasional Tahun 2020 </a></h5>                   
+                            </div>
+                        </li>   
+                        <li class="media mt-3">
+                            <img src="assets/images/logo-fl2sn.png" class="align-self-center rounded mr-3 bg-light" alt="" width="40%">
+                            <div class="media-body">
+                                <span class="badge badge-pill badge-orange text-white">Jenjang SD</span>
+                                <h6 class="mb-1"><a href="" class="text-dark">Pengumuman Peraih Medali KOSN SD – SMP Tingkat Nasional Tahun 2020 </a></h5>                   
+                            </div>
+                        </li>                      
+                    </ul>                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-center mx-auto mt-3 mb-5">
+                    <a href="#" class="btn btn-orange2 btn-radius">Berita Lainya <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pengumuman -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-lg-3 mx-auto mt-5">
+                    <h4 class="title-section">Kabar Prestasi</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-6">                                        
+                    <a href="" class="pengumuman-card">        
+                        <div>
+                            <h2>15</h2>
+                            <h5>Maret</h5>
+                            <h5>2021</h5>
+                        </div>                                                                                                
+                        <h4>Pengumuman Panduan Pelaksanaan Lomba LDBI NSDC</h4>                            
+                    </a>                    
+                </div>
+                <div class="col-md-12 col-lg-6">                                        
+                    <a href="" class="pengumuman-card">        
+                        <div>
+                            <h2>08</h2>
+                            <h5>Maret</h5>
+                            <h5>2021</h5>
+                        </div>                                                                                                
+                        <h4>Pengumuman Panduan Pelaksanaan Lomba LDBI NSDC</h4>                            
+                    </a>                    
+                </div>
+                <div class="col-md-12 col-lg-6">                                        
+                    <a href="" class="pengumuman-card">        
+                        <div>
+                            <h2>10</h2>
+                            <h5>Maret</h5>
+                            <h5>2021</h5>
+                        </div>                                                                                                
+                        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>                            
+                    </a>                    
+                </div>
+                <div class="col-md-12 col-lg-6">                                        
+                    <a href="" class="pengumuman-card">        
+                        <div>
+                            <h2>30</h2>
+                            <h5>Maret</h5>
+                            <h5>2021</h5>
+                        </div>                                                                                                
+                        <h4>Pengumuman Panduan Pelaksanaan Lomba LDBI NSDC</h4>                            
+                    </a>                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-center mx-auto mt-3 mb-5">
+                    <a href="#" class="btn btn-orange2 btn-radius">Pengumuman Lainya <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Voting -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <div class="vote">
+                        <div id="formVote">
+                            <img src="assets/images/bg-vote.svg" alt="">
+                            <h2>Jajak Pendapat #SobatPrestasi</h2>
+                            <h4>Bagaimana menurutmu informasi yang ditampilkan di website ini?</h4>
+                            <!-- <form> -->
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="voteInformasi" id="inlineRadio1" value="4">
+                                    <label class="form-check-label" for="inlineRadio1">Sangat bermanfaat</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="voteInformasi" id="inlineRadio2" value="3">
+                                    <label class="form-check-label" for="inlineRadio2">Bermanfaat</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="voteInformasi" id="inlineRadio2" value="2">
+                                    <label class="form-check-label" for="inlineRadio2">Kurang Bermanfaat</label>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <button class="btn btn-orange btn-radius" onclick="showChart();">Kirim</button>                            
+                                </div>
+                            <!-- </form> -->
+                        </div>
+                        <div class="hasil-vote" id="hasilVote" style="display: none;">
+                            <img src="assets/images/bg-vote.svg" alt="">
+                            <canvas id="voteChart"></canvas>
+                            <h3>Terima Kasih Atas Partisipasi Anda <i class="fas fa-check-circle"></i></h3>
+                        </div>
+                    </div>                                        
+                </div>                
+            </div>
+        </div>
+    </section>
+    <!-- Quotes -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 p-4 mt-5">
+                    <div class="quotes">
+                        <img src="assets/images/qu-pres.svg" alt="">
+                        <div class="txt-quotes">
+                            <h3>"Semakin tinggi ilmu seseorang, maka semakin besar rasa toleransinya"</h3>
+                            <hr class="w-25" style="border-color: #fff;">
+                            <h5>Abdurahman Wahid (Gus Dur)</h5>
+                            <p>Presiden ke-4 Republik Indonesia</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Poster Slider -->
+    <section class="overflow-hidden position-relative">
+		<div class="container">
+			<div class="bg__grub--slider p-3">
+				<div class="row pt-5 pb-5 pl-4">
+					<div class="col-md-5 col-lg-4 pb-5 text-center text-md-left pb-md-0 my-auto">
+                        <div class="card-poster">
+                            <h3 class="mb-3">Poster Prestasi</h3>
+                            <p>Visualisasi ide dalam bentuk gambar oleh #sobatprestasi</p>
+                            <a href="">Lihat lebih banyak</a>
+                        </div>
+						
+
+						<ul class="ul__list--inline slider__arrow">
+							<li class="arrow__left pointer mr-3 position-relative"><i class="fa fa-chevron-left" aria-hidden="true"></i></li>
+							<li class="arrow__right pointer position-relative"><i class="fa fa-chevron-right" aria-hidden="true"></i></li>
+						</ul>
+
+					</div>
+					<div class="col-md-7 col-lg-8 my-auto">
+                        <ul class="ul__list--inline slider__offset">
+                            <li class="pl-3 pr-3 images__slider no__outline">
+                                <img src="assets/poster/1.png" alt="">
+                                <a href="">
+                                    <h3>100 K</h3>
+                                    <p>admin puspresnas</p>
+                                </a>
+                            </li>
+                            <li class="pl-3 pr-3 images__slider no__outline">
+                                <img src="assets/poster/2.png" alt="">
+                                <a href="">
+                                    <h3>100 K</h3>
+                                    <p>admin puspresnas</p>
+                                </a>
+                            </li>
+                            <li class="pl-3 pr-3 images__slider no__outline">
+                                <img src="assets/poster/3.jpg" alt="">
+                                <a href="">
+                                    <h3>100 K</h3>
+                                    <p>admin puspresnas</p>
+                                </a>
+                            </li>
+                            <li class="pl-3 pr-3 images__slider no__outline">
+                                <img src="assets/poster/4.jpg" alt="">
+                                <a href="">
+                                    <h3>100 K</h3>
+                                    <p>admin puspresnas</p>
+                                </a>
+                            </li>
+                        </ul>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <!-- Video -->
+    <section>
+		<div class="container">
+            <div class="row">
+                <div class="col-md-4 mx-auto mt-5">
+                    <h4 class="title-section mx-auto">Sinema Prestasi</h4>
+                </div>
+            </div>
+			<div class="row">
+                <div class="col-md-12">
+                    <div class="video-slider">
+                        <div class="card-slider">                                                      
+                            <a href="https://img.youtube.com/vi/LblLwDCS4II/0.jpg" target="_blank" class="link-yt">
+                                <img src="https://img.youtube.com/vi/LblLwDCS4II/0.jpg" class="img-fluid" alt=""> 
+                                <i class="fab fa-youtube icon-yt"></i>
+                            </a>                           
+                            <a href="#" class="caption shadow-sm"><h4>Lorem ipsum dolor sit amet lor idul</h4></a>
+                        </div>
+                        <div class="card-slider">                                                      
+                            <a href="https://img.youtube.com/vi/LblLwDCS4II/0.jpg" target="_blank" class="link-yt">
+                                <img src="https://img.youtube.com/vi/LblLwDCS4II/0.jpg" class="img-fluid" alt=""> 
+                                <i class="fab fa-youtube icon-yt"></i>
+                            </a>                           
+                            <a href="#" class="caption shadow-sm"><h4>Lorem ipsum dolor sit amet lor idul</h4></a>
+                        </div>
+                        <div class="card-slider">                                                      
+                            <a href="https://img.youtube.com/vi/LblLwDCS4II/0.jpg" target="_blank" class="link-yt">
+                                <img src="https://img.youtube.com/vi/LblLwDCS4II/0.jpg" class="img-fluid" alt=""> 
+                                <i class="fab fa-youtube icon-yt"></i>
+                            </a>                           
+                            <a href="#" class="caption shadow-sm"><h4>Lorem ipsum dolor sit amet lor idul</h4></a>
+                        </div>
+                    </div>
+                </div>
+            </div>		
+		</div>
+	</section>
+    <!-- Galeri -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mx-auto mt-5">
+                    <h4 class="title-section mx-auto">Galeri</h4>
+                </div> 
+            </div>            
+            <div class="row">
+                <div class="col-md-12 col-lg-4">
+                    <div class="gallery-grid">
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/galeri/1.jpeg" class="image img-fluid rounded rounded-lg mb-3" alt="">
+                            </div>                        
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/galeri/9.jpeg" class="image img-fluid rounded rounded-lg" alt="">
+                            </div>
+                            <div class="col">
+                                <img src="assets/galeri/8.jpeg" class="image img-fluid rounded rounded-lg" alt="">
+                            </div>
+                            <div class="col">
+                                <img src="assets/galeri/10.jpeg" class="image img-fluid rounded rounded-lg" alt="">
+                            </div>
+                        </div>  
+                        <div class="card-album">
+                            <h3>Kompetisi Olahraga siswa Nasional</h3>
+                            <span><i class="fas fa-calendar-alt"></i> Minggu, 20 - Februari 2021</span>
+                            <a href="#">Detail</a>
+                        </div>                  
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="gallery-grid">
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/galeri/1.jpeg" class="image img-fluid rounded rounded-lg mb-3" alt="">
+                            </div>                        
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/galeri/9.jpeg" class="image img-fluid rounded rounded-lg" alt="">
+                            </div>
+                            <div class="col">
+                                <img src="assets/galeri/8.jpeg" class="image img-fluid rounded rounded-lg" alt="">
+                            </div>
+                            <div class="col">
+                                <img src="assets/galeri/10.jpeg" class="image img-fluid rounded rounded-lg" alt="">
+                            </div>
+                        </div>
+                        <div class="card-album">
+                            <h3>Kompetisi Olahraga siswa Nasional</h3>
+                            <span><i class="fas fa-calendar-alt"></i> Minggu, 20 - Februari 2021</span>
+                            <a href="#">Detail</a>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="gallery-grid">
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/galeri/1.jpeg" class="image img-fluid rounded rounded-lg mb-3" alt="">
+                            </div>                        
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/galeri/9.jpeg" class="image img-fluid rounded rounded-lg" alt="">
+                            </div>
+                            <div class="col">
+                                <img src="assets/galeri/8.jpeg" class="image img-fluid rounded rounded-lg" alt="">
+                            </div>
+                            <div class="col">
+                                <img src="assets/galeri/10.jpeg" class="image img-fluid rounded rounded-lg" alt="">
+                            </div>
+                        </div>
+                        <div class="card-album">
+                            <h3>Kompetisi Olahraga siswa Nasional</h3>
+                            <span><i class="fas fa-calendar-alt"></i> Minggu, 20 - Februari 2021</span>
+                            <a href="#">Detail</a>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="col">
+                    <a class="btn-orange2 btn-radius float-right" href="#">Lebih Banyak</a>
+                </div>              
+            </div>
+        </div>
+    </section>
+    <!-- Langganan -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 p-4 mx-auto mt-5">
+                    <div class="langganan">
+                        <img src="assets/images/langganan.svg" alt="">
+                        <div class="txt-langganan">
+                            <h1>Jangan lewatkan informasi terbaru kami!</h1>                            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque natus error labore perspiciatis exercitationem aut. Nemo suscipit maxime at, illo unde voluptatibus possimus, expedita et, incidunt laudantium totam eos facere!</p>                            
+                        </div>
+                        <form action="">
+                            <div class="form-row">
+                                <div class="col">
+                                    <select class="form-control">
+                                        <option>SD</option>
+                                        <option>DIKSUS</option>
+                                        <option>SMP</option>
+                                        <option>SMA</option>
+                                        <option>DIKTI</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <input type="email" name="email" class="form-control" placeholder="Email">
+                                </div>                                
+                            </div>
+                            <button type="submit" class="btn btn-orange btn-radius float-right">Langganan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sosmed -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mx-auto">
+                    <div class="sosmed">
+                        <h4>Ikuti Kami di Media Sosial:</h4>
+                        <ul>
+                            <li class="fb"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="ig"><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <li class="yt"><a href=""><i class="fab fa-youtube"></i></a></li>
+                            <li class="tw"><a href=""><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pengunjung -->
+    <section>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-3 mx-auto">
+                    <div class="pengunjung">
+                        <h1>13.541</h1>
+                        <p>Pengunjung hari ini</p>
+                    </div>                    
+                </div>
+                <div class="col-md-3 mx-auto">
+                    <div class="pengunjung">
+                        <h1>13.541</h1>
+                        <p>Pengunjung hari ini</p>
+                    </div> 
+                </div>
+                <div class="col-md-3 mx-auto">
+                    <div class="pengunjung">
+                        <h1>13.541</h1>
+                        <p>Pengunjung hari ini</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-footer">
+        <div class="container">
+            <div class="row">                
+                <div class="col-md-4">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.svg" alt="" width="100%">
+                        <h5>Pusat Prestasi Nasional</h5>
+                        <p>Sekretariat Jendral <br> Kementrian Pendidikan dan Kebudayaan</p>
+                    </div>                    
+                </div>
+                <div class="col-md-5 offset-md-3">
+                    <h3 class="text-white">Kontak Kami</h3>
+                    <div class="kontak">                        
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <p>Komplek Kementrian Pendidikan dan Kebudayaan, Gedung C, Lantai 19 Jl. Jendral Sudirman, Senayan, Jakarta - 10270</p>                                                              
+                    </div>
+                    <div class="kontak">
+                        <span><i class="fas fa-phone"></i></span>
+                        <p>021-5731177</p>  
+                    </div>                                                          
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -154,13 +778,202 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+    <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+    <!-- Slick -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
     <script>
         AOS.init();
-        $('#sliderHeader').carousel({
+        $('#slider-header').carousel({
             interval: 10000,
-        });       
+        }); 
+        $(document).ready(function () {
+            (function ($) {
+                "use strict";
+                // manual carousel controls
+                $('.next').click(function () { $('.carousel').carousel('next'); return false; });
+                $('.prev').click(function () { $('.carousel').carousel('prev'); return false; });
+
+            })(jQuery);
+
+            $('#slider-layanan').carousel({
+                interval: 10000
+            })
+
+            $('#slider-layanan.carousel .carousel-item').each(function () {
+                var minPerSlide = 3;
+                var next = $(this).next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+                next.children(':first-child').clone().appendTo($(this));
+
+                for (var i = 0; i < minPerSlide; i++) {
+                    next = next.next();
+                    if (!next.length) {
+                        next = $(this).siblings(':first');
+                    }
+
+                    next.children(':first-child').clone().appendTo($(this));
+                }
+            });
+        });   
+        $(document).ready(function () {
+            (function ($) {
+                "use strict";
+                // manual carousel controls
+                $('.next').click(function () { $('.carousel').carousel('next'); return false; });
+                $('.prev').click(function () { $('.carousel').carousel('prev'); return false; });
+
+            })(jQuery);
+
+            $('#slider-event').carousel({
+                interval: 10000
+            })
+
+            $('#slider-event.carousel .carousel-item').each(function () {
+                var minPerSlide = 3;
+                var next = $(this).next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+                next.children(':first-child').clone().appendTo($(this));
+
+                for (var i = 0; i < minPerSlide; i++) {
+                    next = next.next();
+                    if (!next.length) {
+                        next = $(this).siblings(':first');
+                    }
+
+                    next.children(':first-child').clone().appendTo($(this));
+                }
+            });
+        }); 
+        var randomScalingFactor = function() {
+			return Math.round(Math.random() * 100);
+		};
+
+		var config = {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor()						
+					],
+					backgroundColor: [
+						'#eeb76b',
+						'#e2703a',
+						'#9c3d54'						
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'Sangat Bermanfaat',
+					'Bermanfaat',
+					'Kurang Bermanfaat'
+				]
+			},
+			options: {
+				responsive: true,
+                legend: {
+                    display: true,
+                    position: 'bottom'
+                }
+			}
+		};
+
+		window.onload = function() {
+			var ctx = document.getElementById('voteChart').getContext('2d');
+			window.myPie = new Chart(ctx, config);
+		};  
+        
+        function showChart(){
+            var formVote = document.getElementById("formVote");
+            var hasilVote = document.getElementById("hasilVote");
+            if(formVote.style.display == 'none'){                
+                formVote.style.display = 'block';
+                hasilVote.style.display = 'none';
+            }else{                
+                hasilVote.style.display = 'block';
+                formVote.style.display = 'none';
+            }
+        }
+
+        $('.slider__offset').slick({
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			arrows: true,
+			prevArrow: $(".arrow__left"),
+			nextArrow: $(".arrow__right"),
+			fade: false,
+			infinite: true,
+			autoplay: true,
+			pauseOnHover:true,
+			focusOnSelect: true,
+			centerPadding: 0,
+			slideMargin: 10,
+			centerPadding: 0,
+			responsive: [           
+			{
+				breakpoint: 1140,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 577,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+			}
+			]
+		});   
+        $('.video-slider').slick({
+            centerMode: true,
+            centerPadding: '270px',
+            slidesToShow:1,
+            responsive: [
+                {
+                    breakpoint: 991,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '0px',
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '0px',
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '0px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });     
     </script>
 </body>
 
